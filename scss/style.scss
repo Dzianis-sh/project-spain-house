@@ -1,0 +1,70 @@
+/* Variables */
+:root {
+  --ff-open-sans: "Open Sans", sans-serif;
+  --ff-playfair: "Playfair Display SC", serif;
+  --ff-search-roboto: "Roboto", sans-serif;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #808080;
+  --primary-white-text: #ffffff;
+  --primary-white-text-op: #ffffffcc;
+  --primary-black-text: #000000;
+  --secondary-grey-text: #808080;
+  --color-border: #808080;
+  --sub-grey-darker: #606060;
+  --input-text: 18px;
+  --primary-text-size: 16px;
+  --bg-overlay: #80808080;
+  --links-color: #000000;
+  --links-hover: #789cc3;
+}
+/* ============================================= */
+
+// Imports
+@import "./_nullstyle.scss";
+@import "./_mixins.scss";
+@import "./_header.scss";
+@import "./_footer.scss";
+// =============================================
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@400;700&display=swap");
+// =============================================
+
+label {
+  cursor: pointer;
+}
+
+a {
+  transition: all 0.3s;
+  color: var(--links-color);
+}
+
+button {
+  background: transparent;
+}
+
+body {
+  font-family: var(--ff-open-sans);
+  font-size: var(--primary-text-size);
+  background: var(--primary-bg-color);
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  flex: 0 1 auto;
+}
+.main {
+  flex: 1 1 auto;
+}
+.footer {
+  flex: 0 1 auto;
+}
+
+/* Main */
+
+/* ============================================= */
