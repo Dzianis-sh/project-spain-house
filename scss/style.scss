@@ -9,7 +9,9 @@
   --primary-white-text-op: #ffffffcc;
   --primary-black-text: #000000;
   --secondary-grey-text: #808080;
+  --title-color: #808080;
   --color-border: #808080;
+  --color-border-lighter: #bcbcbc;
   --sub-grey-darker: #606060;
   --input-text: 18px;
   --primary-text-size: 16px;
@@ -44,9 +46,25 @@ button {
 }
 
 body {
+  padding-top: 88px;
   font-family: var(--ff-open-sans);
   font-size: var(--primary-text-size);
   background: var(--primary-bg-color);
+}
+
+.title {
+  font-family: var(--ff-playfair);
+  color: var(--title-color);
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+p {
+  font-family: var(--ff-open-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .wrapper {
@@ -65,6 +83,20 @@ body {
   flex: 0 1 auto;
 }
 
+.container {
+  max-width: 1256px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
 /* Main */
+.about {
+  padding: 75px 0 90px;
+}
+
+.about-info {
+  &__description {
+    line-height: 32px;
+  }
+}
 
 /* ============================================= */
