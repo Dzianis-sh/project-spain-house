@@ -13,6 +13,9 @@
     background: #fff;
     padding: 14px 0;
     transition: transform 0.2s ease-in;
+    img {
+      filter: drop-shadow(3px 4px 3px #898989);
+    }
   }
 
   &__bot {

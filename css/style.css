@@ -130,6 +130,9 @@ h6 {
   padding: 14px 0;
   transition: transform 0.2s ease-in;
 }
+.header__top img {
+  filter: drop-shadow(3px 4px 3px #898989);
+}
 .header__bot {
   position: relative;
   color: var(--primary-white-text);

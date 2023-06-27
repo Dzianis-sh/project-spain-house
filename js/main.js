@@ -1,7 +1,7 @@
 // header scroll hide
 
 let lastScroll = 0;
-let defaultOffset = 800;
+let defaultOffset = 200;
 const fixedHeader = document.querySelector('.header__top');
 
 const scrollPosition = () => window.scrollY || document.querySelector.scrollTop;
