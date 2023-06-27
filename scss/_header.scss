@@ -13,8 +13,9 @@
     background: #fff;
     padding: 14px 0;
     transition: transform 0.2s ease-in;
+    box-shadow: 0px 0px 5px var(--bg-overlay);
     img {
-      filter: drop-shadow(3px 4px 3px #898989);
+      @include drop-shadow();
     }
   }
 
