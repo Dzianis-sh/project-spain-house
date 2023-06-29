@@ -566,6 +566,22 @@ p {
   grid-template-rows: auto;
   gap: 50px;
 }
+.instagram-gallery__item {
+  transition: all 0.3s;
+  overflow: hidden;
+  box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.3);
+}
+.instagram-gallery__item img {
+  transition: all 0.3s;
+  transform: scale(1.02);
+}
+.instagram-gallery__item:hover {
+  cursor: zoom-in;
+  box-shadow: 3px 3px 25px rgb(121, 121, 121);
+}
+.instagram-gallery__item:hover img {
+  transform: scale(104%);
+}
 
 /* END INSTAGRAM */
 /* ============================================= */

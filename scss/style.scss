@@ -393,6 +393,23 @@ p {
   justify-content: center;
   grid-template-rows: auto;
   gap: 50px;
+
+  &__item {
+    transition: all 0.3s;
+    overflow: hidden;
+    @include card-box-shadow();
+    img {
+      transition: all 0.3s;
+      transform: scale(1.02);
+    }
+    &:hover {
+      cursor: zoom-in;
+      @include box-shadow-upper();
+      img {
+        transform: scale(104%);
+      }
+    }
+  }
 }
 /* END INSTAGRAM */
 
