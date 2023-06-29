@@ -409,6 +409,7 @@ p {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  z-index: 2;
   visibility: hidden;
   transform: scale(50%);
 }
@@ -451,7 +452,6 @@ p {
   box-shadow: 0px 5px 23px 0px rgb(179, 179, 179);
 }
 .card:hover .slide-arrow {
-  z-index: 2;
   opacity: 1;
   visibility: visible;
   transform: scale(100%);
@@ -577,7 +577,7 @@ p {
 }
 .instagram-gallery__item:hover {
   cursor: zoom-in;
-  box-shadow: 3px 3px 25px rgb(121, 121, 121);
+  box-shadow: 3px 4px 25px rgb(121, 121, 121);
 }
 .instagram-gallery__item:hover img {
   transform: scale(104%);

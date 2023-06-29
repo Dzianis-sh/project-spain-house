@@ -215,6 +215,7 @@ p {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  z-index: 2;
   visibility: hidden;
   transform: scale(50%);
 }
@@ -257,7 +258,6 @@ p {
 
   &:hover {
     .slide-arrow {
-      z-index: 2;
       opacity: 1;
       visibility: visible;
       transform: scale(100%);
