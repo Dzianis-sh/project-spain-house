@@ -358,9 +358,9 @@ p {
 /* INSTAGRAM */
 
 .instagram {
-  padding: 38px 0 60px;
-
   &__container {
+    padding: 38px 0 60px;
+    border-bottom: 1px solid var(--btn-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,5 +412,54 @@ p {
   }
 }
 /* END INSTAGRAM */
+
+/* OWNER */
+
+.owner {
+  padding: 70px 87px;
+
+  &__body {
+    flex-direction: row-reverse;
+    justify-content: start;
+    column-gap: 79px;
+  }
+}
+.owner-info {
+  flex: 1 1;
+  font-family: var(--ff-open-sans);
+  &__title {
+    margin-bottom: 23px;
+  }
+
+  &__sub-title {
+    margin-bottom: 34px;
+  }
+
+  &__description {
+    margin-bottom: 28px;
+  }
+  &__languages {
+    color: var(--secondary-grey-text);
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+
+  &__contacts {
+    padding: 14px 75px;
+    display: inline-block;
+    border: 2px solid var(--color-border);
+    color: var(--secondary-grey-text);
+    background-color: var(--primary-bg-color);
+    &:hover {
+      border: 2px solid var(--color-border);
+      background: var(--secondary-bg-color);
+      color: var(--primary-white-text-op);
+    }
+  }
+}
+
+/* END OWNER*/
 
 /* ============================================= */
