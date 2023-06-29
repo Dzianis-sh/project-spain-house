@@ -400,14 +400,17 @@ p {
 }
 
 .slide-arrow {
-  width: 29px;
+  transition: all 0.3s;
   position: absolute;
   height: 34px;
-  z-index: 5;
+  width: 29px;
   background: var(--btn-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(50%);
 }
 
 .recommend-objects__grid {
@@ -447,10 +450,17 @@ p {
 .card:hover {
   box-shadow: 0px 5px 23px 0px rgb(179, 179, 179);
 }
+.card:hover .slide-arrow {
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(100%);
+}
 .card:hover .card__bg img {
   transform: scale(101%);
 }
 .card__body {
+  transition: all 0.3s;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -523,6 +533,40 @@ p {
 /* END CARD */
 /* end recommend*/
 /* INSTAGRAM */
+.instagram {
+  padding: 38px 0 60px;
+}
+.instagram__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.instagram__icon {
+  margin-bottom: 17px;
+}
+.instagram__title {
+  font-size: 35px;
+  margin-bottom: 17px;
+}
+.instagram__email {
+  margin-bottom: 17px;
+}
+.instagram__btn {
+  padding: 14px 22px;
+}
+
+.instagram-gallery {
+  margin-bottom: 73px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(375px, auto));
+  justify-content: center;
+  justify-content: center;
+  grid-template-rows: auto;
+  gap: 50px;
+}
+
 /* END INSTAGRAM */
 /* ============================================= */
 
