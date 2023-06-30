@@ -117,8 +117,8 @@ p {
 }
 
 .container {
-  max-width: 1256px;
-  padding: 0 10px;
+  max-width: 1266px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 /* Main */
@@ -128,7 +128,7 @@ p {
   &__body {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 160px;
     align-items: center;
   }
 }
@@ -252,6 +252,12 @@ p {
   position: relative;
   transition: all 0.3s;
   height: 100%;
+
+  &__bg {
+    height: 100%;
+    cursor: pointer;
+  }
+
   &__bg img {
     transition: all 0.3s;
   }
@@ -262,8 +268,10 @@ p {
       visibility: visible;
       transform: scale(100%);
     }
-    .card__bg img {
-      transform: scale(101%);
+
+    .card__bg {
+      // transition: all 0.4s ease-in-out;
+      // position: relative;
     }
     @include card-box-shadow-upper();
   }
@@ -353,6 +361,9 @@ p {
 
 /* END CARD */
 
+/* SLIDER*/
+/* SLIDER END*/
+
 /* end recommend*/
 
 /* INSTAGRAM */
@@ -416,7 +427,7 @@ p {
 /* OWNER */
 
 .owner {
-  padding: 70px 87px;
+  padding: 70px 0px 87px;
 
   &__body {
     flex-direction: row-reverse;
