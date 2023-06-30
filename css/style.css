@@ -22,6 +22,7 @@
   --primary-text-size: 16px;
   --bg-overlay: #80808080;
   --links-color: #000000;
+  --btn-active-color: #789cc3;
   --links-hover: #789cc3;
 }
 
@@ -365,15 +366,16 @@ p {
 .about__body {
   display: flex;
   justify-content: space-between;
-  gap: 160px;
+  gap: 15px;
   align-items: center;
 }
 
 .about-info {
-  flex: 0 1 574px;
+  flex: 1 1;
 }
 .about-info__description {
   line-height: 32px;
+  max-width: 574px;
 }
 .about-info__title {
   margin-bottom: 32px;
@@ -448,6 +450,9 @@ p {
   z-index: 2;
   visibility: hidden;
   transform: scale(50%);
+}
+.slide-arrow:active {
+  background-color: var(--btn-active-color);
 }
 
 .recommend-objects__grid {
@@ -598,10 +603,9 @@ p {
   margin-bottom: 73px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(375px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 376px));
+  grid-template-rows: 1fr;
   justify-content: center;
-  justify-content: center;
-  grid-template-rows: auto;
   gap: 50px;
 }
 .instagram-gallery__item {
@@ -610,15 +614,16 @@ p {
   box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.3);
 }
 .instagram-gallery__item img {
+  width: 100%;
   transition: all 0.3s;
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 .instagram-gallery__item:hover {
   cursor: zoom-in;
   box-shadow: 3px 4px 25px rgb(121, 121, 121);
 }
 .instagram-gallery__item:hover img {
-  transform: scale(104%);
+  transform: scale(1.05);
 }
 
 /* END INSTAGRAM */

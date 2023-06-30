@@ -20,6 +20,7 @@
   --primary-text-size: 16px;
   --bg-overlay: #80808080;
   --links-color: #000000;
+  --btn-active-color: #789cc3;
   --links-hover: #789cc3;
 }
 /* ============================================= */
@@ -128,15 +129,16 @@ p {
   &__body {
     display: flex;
     justify-content: space-between;
-    gap: 160px;
+    gap: 15px;
     align-items: center;
   }
 }
 
 .about-info {
-  flex: 0 1 574px;
+  flex: 1 1;
   &__description {
     line-height: 32px;
+    max-width: 574px;
   }
 
   &__title {
@@ -206,6 +208,9 @@ p {
 }
 
 .slide-arrow {
+  &:active {
+    background-color: var(--btn-active-color);
+  }
   transition: all 0.3s;
   position: absolute;
   height: 34px;
@@ -269,10 +274,10 @@ p {
       transform: scale(100%);
     }
 
-    .card__bg {
-      // transition: all 0.4s ease-in-out;
-      // position: relative;
-    }
+    // .card__bg {
+    // transition: all 0.4s ease-in-out;
+    // position: relative;
+    // }
     @include card-box-shadow-upper();
   }
 
@@ -399,10 +404,10 @@ p {
   margin-bottom: 73px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(375px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 376px));
+  // grid-template-columns: repeat(auto-fill, minmax(100px, 30.6%));
+  grid-template-rows: 1fr;
   justify-content: center;
-  justify-content: center;
-  grid-template-rows: auto;
   gap: 50px;
 
   &__item {
@@ -410,14 +415,15 @@ p {
     overflow: hidden;
     @include card-box-shadow();
     img {
+      width: 100%;
       transition: all 0.3s;
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
     &:hover {
       cursor: zoom-in;
       @include box-shadow-upper();
       img {
-        transform: scale(104%);
+        transform: scale(1.05);
       }
     }
   }
