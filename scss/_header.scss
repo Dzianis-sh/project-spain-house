@@ -21,6 +21,10 @@
 
   &__bot {
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
     color: var(--primary-white-text);
     &::after {
       content: "";
@@ -51,11 +55,18 @@
     position: relative;
     z-index: 5;
     display: flex;
-    pointer-events: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding-bottom: 16px;
+    h1,
+    p {
+      pointer-events: none;
+    }
+    h1 {
+      margin-bottom: 9px;
+    }
   }
 }
 .header__top.hide {
@@ -65,7 +76,7 @@
   &__container {
     max-width: 1295px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,6 +86,10 @@
     display: flex;
     align-items: center;
     column-gap: 35px;
+  }
+
+  &__mob-logo {
+    display: none;
   }
   &__languages {
     display: flex;
@@ -120,11 +135,86 @@
 }
 
 .home-bg {
-  position: relative;
   background-image: url("../img/bg-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
 }
+
 /* end header */
+
+/* RESPONSIVE */
+@media (max-width: 1260px) {
+  .header {
+    &__text-over {
+      h1 {
+        font-size: 76px;
+        line-height: 92px;
+      }
+      p {
+        font-size: 14px;
+        max-width: 460px;
+      }
+    }
+  }
+  .header-top {
+    &__info {
+      column-gap: 25px;
+    }
+    &__contacts {
+      column-gap: 20px;
+    }
+  }
+}
+@media (max-width: 1010px) {
+  .contacts,
+  .languages {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  html > body {
+    padding-top: 0px;
+  }
+
+  .header {
+    &__text-over {
+      row-gap: 9px;
+      h1 {
+        font-size: 35px;
+        line-height: 47px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 30px;
+        padding: 0 33px;
+      }
+    }
+  }
+
+  .header-top {
+    background-color: transparent;
+    color: var(--primary-white-text-op);
+    padding: 32px 0px 0px;
+    position: absolute;
+    box-shadow: none;
+    &__container {
+      padding: 0px 22px;
+    }
+    &__mob-logo {
+      display: block;
+    }
+    &__desk-logo {
+      display: none;
+    }
+    &__burger-menu {
+      path {
+        fill: var(--primary-white-text);
+      }
+      &:hover {
+        path {
+          fill: var(--mob-menu-hover);
+        }
+      }
+    }
+  }
+}
+/* END RESPONSIVE */
