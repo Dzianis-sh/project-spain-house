@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <div class="wrapper">
     <header class="header">
       <div class="header__top header-top">
@@ -71,7 +71,7 @@
     <div class="mobile-menu hidden">
     </div>
     <main class="main">
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about__body box-container">
             <div class="about-info box-container__info">
@@ -88,7 +88,9 @@
             <div class="about-image img-block-border">
               <div class="about-image__border img-block-border__border"></div>
               <div class="about-image__img img-block-border__img">
-                <img width="367" height="500" src="img/main/about-girl-bg.jpg" alt="pic">
+                <img class="about-image__img--desk" width="367" height="500" src="img/main/about-girl-bg.jpg" alt="pic">
+                <img class="about-image__img--mob" width="1161" height="708" src="img/main/about-girl-bg-mob.jpg"
+                  alt="pic">
               </div>
             </div>
           </div>
@@ -227,8 +229,8 @@
       <section class="instagram">
         <div class="container">
           <div class="instagram__container">
-            <div class="instagram__icon"><img width="44" height="44" src="img/main/bl-inst-inst.svg"
-                alt="instagram-icon"></div>
+            <a href="https://www.instagram.com" class="instagram__icon"><img width="44" height="44"
+                src="img/main/bl-inst-inst.svg" alt="instagram-icon"></a>
             <div class="instagram__title title">Instagram</div>
             <a href="https://www.instagram.com" class="instagram__email">@realestate_spain_ekaterina</a>
             <div class="instagram-gallery">
@@ -260,7 +262,7 @@
                 <img src="img/main/inst-9.jpg" alt="pic">
               </div>
             </div>
-            <a href="" class="instagram__btn btn">смотреть больше</a>
+            <a href="#" class="instagram__btn btn">смотреть больше</a>
           </div>
         </div>
       </section>
@@ -280,7 +282,7 @@
             <div class="owner-image img-block-border">
               <div class="owner-image__border img-block-border__border"></div>
               <div class="owner-image__img img-block-border__img">
-                <img width="368" height="500" src="img/main/director-bot-bg.jpg" alt="pic">
+                <img width="368" height="500" src="img/main/onwer-bot-bg.jpg" alt="pic">
               </div>
             </div>
           </div>
@@ -294,17 +296,38 @@
               alt="logo"></a>
           <div class="footer__socials">
             <a title="Contact Instagram" href="https://www.instagram.com">
-              <img class="footer-left-logo" src="./img/footer/instagram.svg" width="29" height="29"
-                alt="instagram-logo">
+              <svg class="footer-left-logo" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_39_83)">
+                  <path
+                    d="M14.5 9.44186C11.2205 9.44186 9.44186 12.1395 9.44186 14.5566C9.44186 17.5349 12.1395 19.5581 14.5 19.5581C17.5349 19.5581 19.5581 16.8605 19.5581 14.5566C19.5581 12.1395 17.7795 9.44186 14.5 9.44186ZM14.5 9.44186C11.2205 9.44186 9.44186 12.1395 9.44186 14.5566C9.44186 17.5349 12.1395 19.5581 14.5 19.5581C17.5349 19.5581 19.5581 16.8605 19.5581 14.5566C19.5581 12.1395 17.7795 9.44186 14.5 9.44186ZM24.752 0H4.24805C1.90312 0 0 1.90312 0 4.24805V24.752C0 27.0969 1.90312 29 4.24805 29H24.752C27.0969 29 29 27.0969 29 24.752V4.24805C29 1.90312 27.0969 0 24.752 0ZM14.5 22.593C10.286 22.593 6.40698 18.7706 6.40698 14.5566C6.40698 10.3425 10.286 6.40698 14.5 6.40698C18.714 6.40698 22.593 10.3425 22.593 14.5566C22.593 18.7706 18.714 22.593 14.5 22.593ZM23.8457 6.91016C22.9111 6.91016 22.1465 6.14551 22.1465 5.21094C22.1465 4.27637 22.9111 3.51172 23.8457 3.51172C24.7803 3.51172 25.5449 4.27637 25.5449 5.21094C25.5449 6.14551 24.7803 6.91016 23.8457 6.91016ZM14.5 9.44186C11.2205 9.44186 9.44186 12.1395 9.44186 14.5566C9.44186 17.5349 12.1395 19.5581 14.5 19.5581C17.5349 19.5581 19.5581 16.8605 19.5581 14.5566C19.5581 12.1395 17.7795 9.44186 14.5 9.44186ZM14.5 9.44186C11.2205 9.44186 9.44186 12.1395 9.44186 14.5566C9.44186 17.5349 12.1395 19.5581 14.5 19.5581C17.5349 19.5581 19.5581 16.8605 19.5581 14.5566C19.5581 12.1395 17.7795 9.44186 14.5 9.44186ZM14.5 9.44186C11.2205 9.44186 9.44186 12.1395 9.44186 14.5566C9.44186 17.5349 12.1395 19.5581 14.5 19.5581C17.5349 19.5581 19.5581 16.8605 19.5581 14.5566C19.5581 12.1395 17.7795 9.44186 14.5 9.44186Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_39_83">
+                    <rect width="29" height="29" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
             <a title="Contact Facebook" href="https://www.facebook.com">
-              <img class="footer-right-logo" src="./img/footer/facebook.svg" width="29" height="29" alt="facebook-logo">
+              <svg class="footer-right-logo" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_39_81)">
+                  <path
+                    d="M24.752 0H4.24805C1.90587 0 0 1.90587 0 4.24805V24.752C0 27.0941 1.90587 29 4.24805 29H12.8008V18.748H9.40234V13.6504H12.8008V10.1953C12.8008 7.3843 15.0874 5.09766 17.8984 5.09766H23.0527V10.1953H17.8984V13.6504H23.0527L22.2031 18.748H17.8984V29H24.752C27.0941 29 29 27.0941 29 24.752V4.24805C29 1.90587 27.0941 0 24.752 0Z"
+                    fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_39_81">
+                    <rect width="29" height="29" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
             </a>
           </div>
           <div class="footer__copyright">&copy;&nbsp;Все права защищены. Агентство недвижимости Spain House</div>
         </div>
-
-
       </div>
     </footer>
   </div>

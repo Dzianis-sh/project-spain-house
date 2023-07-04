@@ -59,7 +59,11 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding-bottom: 16px;
+    a {
+      display: none;
+      position: absolute;
+      bottom: 20px;
+    }
     h1,
     p {
       pointer-events: none;
@@ -163,7 +167,7 @@
     }
   }
 }
-@media (max-width: 1010px) {
+@media (max-width: 1030px) {
   .contacts,
   .languages {
     display: none;
@@ -171,7 +175,7 @@
 }
 
 @media (max-width: 600px) {
-  html > body {
+  body.body {
     padding-top: 0px;
   }
 
@@ -186,6 +190,9 @@
         font-size: 13px;
         line-height: 30px;
         padding: 0 33px;
+      }
+      a {
+        display: block;
       }
     }
   }
