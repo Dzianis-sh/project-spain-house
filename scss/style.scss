@@ -169,6 +169,114 @@ p {
   }
 }
 
+/* MOBILE MENU */
+.mobile-menu {
+  transition: all 0.5s ease;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 15;
+  overflow: hidden;
+  // opacity: 1;
+  // visibility: visible;
+
+  &__body {
+    display: flex;
+    background: var(--primary-bg-color);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 39px 30px;
+    height: 100vh;
+    width: 328px;
+    @include menu-shadow();
+  }
+
+  &__close {
+    margin-bottom: 52px;
+    path {
+      transition: all 0.3s ease;
+    }
+    &:hover path {
+      fill: var(--mob-menu-hover);
+    }
+  }
+
+  &__languages {
+    display: none;
+    align-self: center;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__menu-list {
+    margin-bottom: 20px;
+    width: 320px;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &__list-item {
+    border-bottom: 1px solid var(--color-border);
+    &:last-child {
+      border-bottom: none;
+    }
+    a {
+      padding: 10px 0;
+      display: block;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      &:hover {
+        color: var(--links-hover);
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    row-gap: 14px;
+    div:first-child {
+      order: 1;
+    }
+    div:nth-child(2) {
+      order: 3;
+    }
+    div:last-child {
+      order: 2;
+    }
+  }
+
+  &__socials {
+    align-self: center;
+    a:first-child {
+      margin-right: 22px;
+    }
+    a {
+      display: inline-block;
+      &:hover {
+        transform: scale(120%);
+      }
+    }
+  }
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  margin-right: -400px;
+}
+/* END MOBILE MENU */
+
 /* block 'img-block-border'*/
 .img-block-border {
   display: flex;
@@ -195,6 +303,10 @@ p {
   }
 }
 /* end 'img-block-border'*/
+
+/* MOBILE-MENU */
+
+/* END MOBILE-MENU */
 
 /* section recommend */
 .recommend {
@@ -665,6 +777,14 @@ p {
       display: block;
     }
   }
+
+  .about-info,
+  .owner-info {
+    &__description {
+      text-align: center;
+    }
+  }
+
   .img-block-border .about-image__img--mob {
     height: auto;
     width: 100%;
