@@ -61,12 +61,8 @@
     height: 100%;
     a {
       display: none;
-      position: absolute;
-      bottom: 20px;
-    }
-    h1,
-    p {
-      pointer-events: none;
+      // position: absolute;
+      // bottom: 20px;
     }
     h1 {
       margin-bottom: 9px;
@@ -145,6 +141,10 @@
   background-image: url(../img/bg-newbuildings.jpg);
 }
 
+.contacts-bg {
+  background-image: url("../img/kuzmina-bg.jpg");
+}
+
 /* end header */
 
 /* RESPONSIVE */
@@ -154,9 +154,11 @@
       h1 {
         font-size: 76px;
         line-height: 92px;
+        text-align: center;
       }
       p {
         font-size: 14px;
+        text-transform: uppercase;
         max-width: 460px;
       }
     }
@@ -202,7 +204,7 @@
           font-size: 12px;
           font-weight: 700;
           line-height: 30px;
-          color: var(--primary-white-text-op);
+          color: var(--primary-white-text);
           text-align: center;
         }
       }
