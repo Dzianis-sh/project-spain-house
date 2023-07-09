@@ -31,6 +31,7 @@
 @import "./_mixins.scss";
 @import "./_header.scss";
 @import "./_footer.scss";
+@import "./nbuildings.scss";
 // =============================================
 
 // Fonts
@@ -774,7 +775,7 @@ p {
       margin-bottom: 13px;
     }
     &__title {
-      max-width: 98%;
+      max-width: 85%;
       margin: 0 auto 40px;
       font-size: 16px;
       line-height: 28px;
@@ -938,6 +939,7 @@ p {
   .instagram-gallery__item:last-child {
     transform: translateX(53%);
   }
+
   .card {
     &__title {
       font-size: 14px;
