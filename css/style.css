@@ -253,6 +253,10 @@ h6 {
   background-image: url("../img/bg-main.jpg");
 }
 
+.nbuilds-bg {
+  background-image: url(../img/bg-newbuildings.jpg);
+}
+
 /* end header */
 /* RESPONSIVE */
 @media (max-width: 1260px) {
