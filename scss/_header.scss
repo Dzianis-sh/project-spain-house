@@ -60,9 +60,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    a {
-      // display: none;
-    }
+
     h1 {
       margin-bottom: 9px;
     }
@@ -200,6 +198,13 @@
   .contacts,
   .languages {
     display: none;
+  }
+}
+
+@media (max-width: 975px) {
+  .contacts-bg {
+    background-image: url("../img/mob-bg-kuzmina-edited.jpg");
+    background-position: center center;
   }
 }
 

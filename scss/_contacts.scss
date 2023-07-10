@@ -13,7 +13,9 @@
     text-transform: uppercase;
     margin-bottom: 120px;
   }
-
+  .header__text-over {
+    justify-content: flex-end;
+  }
   .header-arrow-scroll {
     row-gap: 4px;
     display: flex;
@@ -24,14 +26,6 @@
       line-height: 25px;
       font-weight: 400;
     }
-  }
-
-  .header__bot {
-    padding-top: 144px;
-  }
-
-  .header__text-over {
-    justify-content: space-between;
   }
 
   .header-arrow-scroll {
@@ -53,6 +47,18 @@
 .header-contacts-arrow {
   &__mob {
     display: none;
+  }
+}
+
+.main-contacts {
+  .owner {
+    padding: 91px 0 121px;
+    &__body {
+      flex-direction: row;
+      column-gap: 51px;
+    }
+    &__description {
+    }
   }
 }
 
@@ -109,7 +115,6 @@
       font-size: 13px;
       font-weight: 700;
       line-height: 25px;
-      margin-bottom: 400px;
     }
   }
 }

@@ -298,6 +298,12 @@ h6 {
     display: none;
   }
 }
+@media (max-width: 975px) {
+  .contacts-bg {
+    background-image: url("../img/mob-bg-kuzmina-edited.jpg");
+    background-position: center center;
+  }
+}
 @media (max-width: 600px) {
   body.body {
     padding-top: 0px;
@@ -471,6 +477,9 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 120px;
 }
+.header-contacts .header__text-over {
+  justify-content: flex-end;
+}
 .header-contacts .header-arrow-scroll {
   row-gap: 4px;
   display: flex;
@@ -481,12 +490,6 @@ h6 {
   text-transform: uppercase;
   line-height: 25px;
   font-weight: 400;
-}
-.header-contacts .header__bot {
-  padding-top: 144px;
-}
-.header-contacts .header__text-over {
-  justify-content: space-between;
 }
 .header-contacts .header-arrow-scroll {
   position: static;
@@ -505,6 +508,13 @@ h6 {
   display: none;
 }
 
+.main-contacts .owner {
+  padding: 91px 0 121px;
+}
+.main-contacts .owner__body {
+  flex-direction: row;
+  column-gap: 51px;
+}
 @media (max-width: 600px) {
   .header-contacts .header-contacts-h1 {
     font-size: 54px;
@@ -549,7 +559,6 @@ h6 {
     font-size: 13px;
     font-weight: 700;
     line-height: 25px;
-    margin-bottom: 400px;
   }
 }
 label {
