@@ -13,8 +13,11 @@
     text-transform: uppercase;
     margin-bottom: 120px;
   }
+
   .header-arrow-scroll {
     row-gap: 4px;
+    display: flex;
+    flex-direction: column;
     span {
       font-size: 18px;
       text-transform: uppercase;

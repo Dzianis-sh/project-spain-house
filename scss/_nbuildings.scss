@@ -17,6 +17,10 @@
     font-size: 24px;
   }
 }
+.header-arrow-scroll {
+  display: none;
+}
+
 @media (max-width: 1265px) {
   .buildings {
     padding: 58px 0 62px;
@@ -36,6 +40,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 35px;
+  }
+  .header-arrow-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 376px) {
