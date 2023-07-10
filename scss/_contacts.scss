@@ -33,6 +33,7 @@
   .header__text-over {
     justify-content: space-between;
   }
+
   .header-arrow-scroll {
     position: static;
   }
@@ -64,7 +65,7 @@
     }
 
     .header__text-over {
-      justify-content: flex-start;
+      justify-content: center;
     }
 
     p.header-contacts-p {
