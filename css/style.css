@@ -268,7 +268,7 @@ h6 {
 }
 
 .contacts-bg {
-  background-image: url("../img/kuzmina-bg.jpg");
+  background-image: url("../img/contacts-hero-bg.jpg");
   background-position: center right;
 }
 
@@ -478,7 +478,19 @@ h6 {
   margin-bottom: 120px;
 }
 .header-contacts .header__text-over {
-  justify-content: flex-end;
+  justify-content: unset;
+}
+.header-contacts .header-arrow-scroll {
+  row-gap: 4px;
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+.header-contacts .header-arrow-scroll span {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 25px;
+  font-weight: 400;
 }
 .header-contacts .header-arrow-scroll {
   row-gap: 4px;
@@ -491,8 +503,9 @@ h6 {
   line-height: 25px;
   font-weight: 400;
 }
-.header-contacts .header-arrow-scroll {
-  position: static;
+
+.contacts-bg {
+  padding-top: 144px;
 }
 
 .header-contacts-socials {
@@ -525,15 +538,6 @@ h6 {
   margin: 0;
 }
 
-@media (min-width: 1600px) {
-  .header-contacts .header__text-over {
-    justify-content: center;
-  }
-  .header-contacts .header-arrow-scroll {
-    position: absolute;
-    bottom: 0;
-  }
-}
 @media (max-width: 1050px) {
   .main-contacts .owner div.owner__body {
     flex-direction: column;
@@ -548,23 +552,11 @@ h6 {
     row-gap: 36px;
   }
 }
-@media (max-width: 975px) {
-  .header-contacts .header-arrow-scroll {
-    position: absolute;
-    bottom: 0;
-  }
-  .header-contacts .header__text-over {
-    justify-content: center;
-  }
-}
 @media (max-width: 600px) {
   .header-contacts .header-contacts-h1 {
     font-size: 54px;
     line-height: 60px;
     margin-bottom: 15px;
-  }
-  .header-contacts .header__text-over {
-    justify-content: center;
   }
   .header-contacts p.header-contacts-p {
     font-size: 16px;
@@ -573,8 +565,6 @@ h6 {
   }
   .header-contacts .header-arrow-scroll {
     row-gap: unset;
-    position: absolute;
-    bottom: 0;
   }
   .header-contacts .header-arrow-scroll span {
     font-size: 12px;
