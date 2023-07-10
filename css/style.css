@@ -515,16 +515,48 @@ h6 {
   flex-direction: row;
   column-gap: 51px;
 }
-.main-contacts .owner .owner-info__description {
+.main-contacts .owner-info__description {
   margin-bottom: 33px;
 }
-.main-contacts .owner .owner-info__description p:first-child {
+.main-contacts .owner-info__description p:first-child {
   margin-bottom: 33px;
 }
-.main-contacts .owner .owner-info__languages {
+.main-contacts .owner-info__languages {
   margin: 0;
 }
 
+@media (min-width: 1600px) {
+  .header-contacts .header__text-over {
+    justify-content: center;
+  }
+  .header-contacts .header-arrow-scroll {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media (max-width: 1050px) {
+  .main-contacts .owner div.owner__body {
+    flex-direction: column;
+  }
+  .main-contacts .owner {
+    padding: 55px 0 43px;
+  }
+  .main-contacts .owner-info__description {
+    margin-bottom: 30px;
+  }
+  .main-contacts .box-container {
+    row-gap: 36px;
+  }
+}
+@media (max-width: 975px) {
+  .header-contacts .header-arrow-scroll {
+    position: absolute;
+    bottom: 0;
+  }
+  .header-contacts .header__text-over {
+    justify-content: center;
+  }
+}
 @media (max-width: 600px) {
   .header-contacts .header-contacts-h1 {
     font-size: 54px;
