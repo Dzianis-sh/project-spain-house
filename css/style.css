@@ -145,6 +145,7 @@ h6 {
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  padding-bottom: 25px;
   color: var(--primary-white-text);
 }
 .header__bot::after {
@@ -180,11 +181,26 @@ h6 {
   justify-content: center;
   height: 100%;
 }
-.header__text-over a {
-  display: none;
-}
 .header__text-over h1 {
   margin-bottom: 9px;
+}
+.header__arrow-mobile {
+  display: none;
+}
+
+.header-arrow-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.header-arrow-scroll span {
+  color: var(--primary-white-text);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
 }
 
 .header__top.hide {
@@ -253,6 +269,7 @@ h6 {
 
 .contacts-bg {
   background-image: url("../img/kuzmina-bg.jpg");
+  background-position: center right;
 }
 
 /* end header */
@@ -285,9 +302,6 @@ h6 {
   body.body {
     padding-top: 0px;
   }
-  .header__text-over {
-    row-gap: 9px;
-  }
   .header__text-over h1 {
     font-size: 35px;
     line-height: 47px;
@@ -297,17 +311,10 @@ h6 {
     line-height: 30px;
     padding: 0 33px;
   }
-  .header__text-over a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .header__text-over a span {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 30px;
-    color: var(--primary-white-text);
-    text-align: center;
+  .header__arrow-mobile {
+    position: absolute;
+    bottom: 0;
+    display: block;
   }
   .header-top {
     background-color: transparent;
@@ -448,7 +455,6 @@ h6 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 15px;
 }
 .header-contacts p.header-contacts-p {
@@ -456,28 +462,36 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 120px;
 }
-.header-contacts .header-contacts-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.header-contacts .header-arrow-scroll {
   row-gap: 4px;
 }
-.header-contacts .header-contacts-link span {
+.header-contacts .header-arrow-scroll span {
   font-size: 18px;
   text-transform: uppercase;
   line-height: 25px;
   font-weight: 400;
-  color: var(--primary-white-text-op);
+}
+.header-contacts .header__bot {
+  padding-top: 144px;
+}
+.header-contacts .header__text-over {
+  justify-content: space-between;
+}
+.header-contacts .header-arrow-scroll {
+  position: static;
 }
 
-.header-contacts-link__mob {
-  display: none;
-}
-
-.contacts-bg-socials {
+.header-contacts-socials {
   display: flex;
   column-gap: 15px;
   margin-bottom: 53px;
+}
+.header-contacts-socials__link:hover {
+  transform: scale(110%);
+}
+
+.header-contacts-arrow__mob {
+  display: none;
 }
 
 @media (max-width: 600px) {
@@ -486,24 +500,32 @@ h6 {
     line-height: 60px;
     margin-bottom: 15px;
   }
+  .header-contacts .header__text-over {
+    justify-content: flex-start;
+  }
   .header-contacts p.header-contacts-p {
     font-size: 16px;
     font-weight: 700;
     line-height: 25px;
   }
-  .header-contacts .header-contacts-link {
+  .header-contacts .header-arrow-scroll {
     row-gap: unset;
+    position: absolute;
+    bottom: 0;
   }
-  .header-contacts .header-contacts-link span {
+  .header-contacts .header-arrow-scroll span {
     font-size: 12px;
     font-weight: 400;
     line-height: 30px;
   }
-  .header-contacts-link__desk {
+  .header-contacts-arrow__desk {
     display: none;
   }
-  .header-contacts-link__mob {
+  .header-contacts-arrow__mob {
     display: block;
+  }
+  .header-contacts-socials {
+    display: none;
   }
 }
 @media (max-width: 376px) {
@@ -516,6 +538,7 @@ h6 {
     font-size: 13px;
     font-weight: 700;
     line-height: 25px;
+    margin-bottom: 400px;
   }
 }
 label {
