@@ -515,6 +515,16 @@ h6 {
   flex-direction: row;
   column-gap: 51px;
 }
+.main-contacts .owner .owner-info__description {
+  margin-bottom: 33px;
+}
+.main-contacts .owner .owner-info__description p:first-child {
+  margin-bottom: 33px;
+}
+.main-contacts .owner .owner-info__languages {
+  margin: 0;
+}
+
 @media (max-width: 600px) {
   .header-contacts .header-contacts-h1 {
     font-size: 54px;

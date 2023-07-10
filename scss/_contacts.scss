@@ -57,7 +57,16 @@
       flex-direction: row;
       column-gap: 51px;
     }
-    &__description {
+    .owner-info {
+      &__description {
+        margin-bottom: 33px;
+        p:first-child {
+          margin-bottom: 33px;
+        }
+      }
+      &__languages {
+        margin: 0;
+      }
     }
   }
 }
