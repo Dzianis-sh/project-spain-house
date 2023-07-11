@@ -90,7 +90,7 @@
   }
 
   .form {
-    padding: 121px 0 97px;
+    padding: 0 0 97px;
 
     &__container {
       max-width: 845px;
@@ -135,12 +135,14 @@
     }
 
     &__inputs {
+      transition: all 0.3s;
       width: 100%;
       max-width: 385px;
       margin: 0 auto 12px;
       display: flex;
       flex-direction: column;
       & input {
+        transition: all 0.3s;
         color: var(--input-text-color);
         width: 100%;
         margin-bottom: 13px;

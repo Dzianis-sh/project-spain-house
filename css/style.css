@@ -543,7 +543,7 @@ h6 {
   margin: 0;
 }
 .main-contacts .form {
-  padding: 121px 0 97px;
+  padding: 0 0 97px;
 }
 .main-contacts .form__container {
   max-width: 845px;
@@ -581,6 +581,7 @@ h6 {
   margin-bottom: 27px;
 }
 .main-contacts .form__inputs {
+  transition: all 0.3s;
   width: 100%;
   max-width: 385px;
   margin: 0 auto 12px;
@@ -588,6 +589,7 @@ h6 {
   flex-direction: column;
 }
 .main-contacts .form__inputs input {
+  transition: all 0.3s;
   color: var(--input-text-color);
   width: 100%;
   margin-bottom: 13px;
