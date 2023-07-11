@@ -212,40 +212,52 @@
         </div>
       </section>
       <section class="form">
-        <div class="form__container">
-          <div class="card__bot">
-            <div class="card__content">
-              <form class="form__body" action="#" method="post">
-                <div class="form__title title">Нужна помощь?</div>
-                <div class="form__subtitle">Заполните форму ниже или позвоните мне</div>
-                <div class="mobile-menu__contacts contacts form-contacts">
-                  <div class="contacts__whatsup contacts-item">
-                    <a target="_blank" href="tel:+79 951 120 365"><img width="25" height="25"
-                        src="./img/icons/whatsapp.svg" alt="ico">&nbsp;<span>+79 951 120
-                        365</span></a>
+        <div class="container">
+          <div class="form__container">
+            <div class="card__bot">
+              <div class="card__content">
+                <form class="form__body" action="#" enctype="multipart/form-data" method="post">
+                  <p class="form__title title">Нужна помощь?</p>
+                  <p class="form__subtitle">Заполните форму ниже или позвоните мне</p>
+                  <div class="mobile-menu__contacts contacts form-contacts">
+                    <div class="contacts__whatsup contacts-item">
+                      <a target="_blank" href="tel:+79 951 120 365"><img width="25" height="25"
+                          src="./img/icons/whatsapp.svg" alt="ico">&nbsp;<span>+79 951 120
+                          365</span></a>
+                    </div>
+                    <div class="contacts__mobile-spain contacts-item"><a class="row-reverse" target="_blank"
+                        href="tel:+34 951 120 365"><img class="mobile-ico-hidden" width="18" height="18"
+                          src="./img/icons/phone-call.svg" alt="ico">&nbsp;<span>+34 951 120 365
+                        </span>&nbsp;<img width="18" height="18" src="./img/icons/spain.svg" alt="ico"></a>
+                    </div>
+                    <div class="contacts__mobile-rus contacts-item"><a class="row-reverse" target="_blank"
+                        href="tel:+79 951 120 365"><img class="mobile-ico-hidden" width="18" height="18"
+                          src="./img/icons/phone-call.svg" alt="ico">&nbsp;<span>+79 951 120
+                          365</span>&nbsp;<img width="18" height="18" src="./img/icons/rus.svg" alt="ico"></a>
+                    </div>
                   </div>
-                  <div class="contacts__mobile-spain contacts-item"><a class="row-reverse" target="_blank"
-                      href="tel:+34 951 120 365"><img class="mobile-ico-hidden" width="18" height="18"
-                        src="./img/icons/phone-call.svg" alt="ico">&nbsp;<span>+34 951 120 365
-                      </span>&nbsp;<img width="18" height="18" src="./img/icons/spain.svg" alt="ico"></a>
+                  <div class="form__inputs">
+                    <label>
+                      <input required placeholder="Имя*" type="text" name="username">
+                    </label>
+                    <label>
+                      <input required placeholder="Email адрес*" type="email" name="useremail">
+                    </label>
+                    <label>
+                      <input placeholder="Номер телефона" type="tel" name="usermobile">
+                    </label>
+                    <label>
+                      <textarea class="form__textarea" name="usermessage" required placeholder="Сообщение*"
+                        name="request-description" id="form-txt-area" rows="5"></textarea>
+                    </label>
                   </div>
-                  <div class="contacts__mobile-rus contacts-item"><a class="row-reverse" target="_blank"
-                      href="tel:+79 951 120 365"><img class="mobile-ico-hidden" width="18" height="18"
-                        src="./img/icons/phone-call.svg" alt="ico">&nbsp;<span>+79 951 120
-                        365</span>&nbsp;<img width="18" height="18" src="./img/icons/rus.svg" alt="ico"></a>
-                  </div>
-                </div>
-                <div class="form__body">
-                  <label><input required placeholder="Имя*" type="text"></label>
-                  <label><input required placeholder="Email адрес*" type="email"></label>
-                  <label><input placeholder="Номер телефона" type="tel"></label>
-                  <label><textarea required placeholder="Сообщение*" name="request-description" maxlength="1500"
-                      id="form-txt-area" cols="30" rows="10"></textarea></label>
-                  <label><input required type="checkbox">я принимаю <a href="./contacts.html">Политику
-                      Конфиденциальности</a></label>
-                  <input class="btn" type="button" value="Отправить">
-                </div>
-              </form>
+                  <label class="form__checkbox">
+                    <input required type="checkbox"><span>Я Принимаю</span>&nbsp;<a href="./contacts.html">Политику
+                      Конфиденциальности</a>
+                  </label>
+                  <input class="form__btn btn" type="submit" value="Отправить">
+                </form>
+              </div>
             </div>
           </div>
         </div>
