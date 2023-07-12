@@ -180,18 +180,43 @@
         color: #80808080;
       }
     }
+
     &__checkbox {
-      display: inline-block;
+      user-select: none;
+      transition: all 2s;
+      position: relative;
+      padding-left: 33px;
       margin-bottom: 20px;
       font-size: 12px;
       line-height: 22px;
+
       input {
-        margin-right: 13px;
+        position: absolute;
+        z-index: -5;
+        opacity: 0;
       }
-      a {
+
+      .form-input-checkbox-border {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0px;
+        top: 0;
+        background: transparent;
+        border-radius: 3px;
+        border: 2px solid var(--color-border-input);
+      }
+
+      input:checked + .form-input-checkbox-border {
+        background-image: url("../img/icons/checkbox.svg");
+        background-origin: border-box;
+      }
+
+      span > a {
         text-decoration: underline;
       }
     }
+
     &__btn {
       transition: all 0.3s;
       cursor: pointer;

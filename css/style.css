@@ -626,15 +626,34 @@ h6 {
   color: rgba(128, 128, 128, 0.5019607843);
 }
 .main-contacts .form__checkbox {
-  display: inline-block;
+  user-select: none;
+  transition: all 2s;
+  position: relative;
+  padding-left: 33px;
   margin-bottom: 20px;
   font-size: 12px;
   line-height: 22px;
 }
 .main-contacts .form__checkbox input {
-  margin-right: 13px;
+  position: absolute;
+  z-index: -5;
+  opacity: 0;
 }
-.main-contacts .form__checkbox a {
+.main-contacts .form__checkbox .form-input-checkbox-border {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 0;
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid var(--color-border-input);
+}
+.main-contacts .form__checkbox input:checked + .form-input-checkbox-border {
+  background-image: url("../img/icons/checkbox.svg");
+  background-origin: border-box;
+}
+.main-contacts .form__checkbox span > a {
   text-decoration: underline;
 }
 .main-contacts .form__btn {
@@ -668,9 +687,6 @@ h6 {
     font-weight: 700;
     line-height: 25px;
     margin-bottom: 288px;
-  }
-  .header-contacts .header__bot {
-    height: 100vh;
   }
   .header-contacts .header-arrow-scroll {
     row-gap: unset;
