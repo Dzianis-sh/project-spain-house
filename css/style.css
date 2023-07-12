@@ -542,45 +542,46 @@ h6 {
 .main-contacts .owner-info__languages {
   margin: 0;
 }
-.main-contacts .form {
+
+.form {
   padding: 0 0 97px;
 }
-.main-contacts .form__container {
+.form__container {
   max-width: 845px;
   margin: 0 auto;
   box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.3019607843);
 }
-.main-contacts .form__body {
+.form__body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main-contacts .form .card__bot {
+.form .card__bot {
   padding: 12px;
 }
-.main-contacts .form .card__content {
+.form .card__content {
   display: block;
   padding: 41px 118px 49px;
 }
-.main-contacts .form__title {
+.form__title {
   font-size: 35px;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
   margin-bottom: 26px;
 }
-.main-contacts .form__subtitle {
+.form__subtitle {
   line-height: 20px;
   text-align: center;
   color: var(--secondary-grey-text);
   margin-bottom: 21px;
 }
-.main-contacts .form .form-contacts {
+.form .form-contacts {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 27px;
 }
-.main-contacts .form__inputs {
+.form__inputs {
   transition: all 0.3s;
   width: 100%;
   max-width: 385px;
@@ -588,7 +589,7 @@ h6 {
   display: flex;
   flex-direction: column;
 }
-.main-contacts .form__inputs input {
+.form__inputs input {
   transition: all 0.3s;
   color: var(--input-text-color);
   width: 100%;
@@ -596,36 +597,36 @@ h6 {
   padding: 5px 22px;
   border: 0.5px solid var(--color-border-input);
 }
-.main-contacts .form__inputs input:focus {
+.form__inputs input:focus {
   outline: 1px solid rgb(28, 160, 160);
   box-shadow: 0px 0px 10px rgba(28, 160, 160, 0.4);
 }
-.main-contacts .form__inputs input::placeholder {
+.form__inputs input::placeholder {
   font-family: var(--ff-open-sans);
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
   color: rgba(128, 128, 128, 0.5019607843);
 }
-.main-contacts .form__textarea {
+.form__textarea {
   padding: 5px 22px;
   width: 100%;
   color: var(--input-text-color);
   border: 0.5px solid var(--color-border-input);
   resize: none;
 }
-.main-contacts .form__textarea:focus {
+.form__textarea:focus {
   outline: 1px solid rgb(28, 160, 160);
   box-shadow: 0px 0px 10px rgba(28, 160, 160, 0.4);
 }
-.main-contacts .form__textarea::placeholder {
+.form__textarea::placeholder {
   font-family: var(--ff-open-sans);
   font-size: 14px;
   font-weight: 400;
   line-height: 28px;
   color: rgba(128, 128, 128, 0.5019607843);
 }
-.main-contacts .form__checkbox {
+.form__checkbox {
   user-select: none;
   transition: all 2s;
   position: relative;
@@ -634,12 +635,12 @@ h6 {
   font-size: 12px;
   line-height: 22px;
 }
-.main-contacts .form__checkbox input {
+.form__checkbox input {
   position: absolute;
   z-index: -5;
   opacity: 0;
 }
-.main-contacts .form__checkbox .form-input-checkbox-border {
+.form__checkbox .form-input-checkbox-border {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -649,14 +650,14 @@ h6 {
   border-radius: 3px;
   border: 2px solid var(--color-border-input);
 }
-.main-contacts .form__checkbox input:checked + .form-input-checkbox-border {
+.form__checkbox input:checked + .form-input-checkbox-border {
   background-image: url("../img/icons/checkbox.svg");
   background-origin: border-box;
 }
-.main-contacts .form__checkbox span > a {
+.form__checkbox span > a {
   text-decoration: underline;
 }
-.main-contacts .form__btn {
+.form__btn {
   transition: all 0.3s;
   cursor: pointer;
   padding: 14px 70px;
@@ -674,6 +675,26 @@ h6 {
   }
   .main-contacts .box-container {
     row-gap: 36px;
+  }
+}
+@media (max-width: 900px) {
+  .form .form-contacts {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 13px;
+    column-gap: 10px;
+  }
+  .form .contacts-item:first-child {
+    padding-right: 5px;
+  }
+  .form .card__content {
+    padding: 20px 14px 28px;
+  }
+  .form__btn {
+    padding: 9px 36px;
+  }
+  .form__checkbox {
+    padding-left: 25px;
   }
 }
 @media (max-width: 600px) {
