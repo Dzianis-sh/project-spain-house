@@ -274,6 +274,10 @@ h6 {
   background-position: center right;
 }
 
+.resale-bg {
+  background-image: url("../img/resale-bg.jpg");
+}
+
 /* end header */
 /* RESPONSIVE */
 @media (max-width: 1260px) {
@@ -744,6 +748,27 @@ h6 {
     line-height: 25px;
   }
 }
+.body-resale .header__text-over {
+  justify-content: flex-start;
+  padding-top: 180px;
+}
+.body-resale .header__text-over h1 {
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+  line-height: 100px;
+  text-align: center;
+}
+
+.main-resale .buildings {
+  padding: 110px 0 85px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 40px;
+}
+
 label {
   cursor: pointer;
 }
