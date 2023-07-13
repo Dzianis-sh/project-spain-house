@@ -774,12 +774,15 @@ h6 {
 }
 
 .main-resale .buildings {
-  padding: 110px 0 85px;
+  padding: 30px 0 35px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
   justify-content: center;
-  gap: 40px;
+  gap: 38px;
+}
+.main-resale .card__title {
+  font-size: 18px;
+  text-align: center;
 }
 
 label {
