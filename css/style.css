@@ -632,7 +632,7 @@ h6 {
 }
 .form__checkbox {
   user-select: none;
-  transition: all 2s;
+  transition: all 0.3s;
   position: relative;
   padding-left: 33px;
   margin-bottom: 20px;
@@ -746,6 +746,19 @@ h6 {
     font-size: 13px;
     font-weight: 700;
     line-height: 25px;
+  }
+  .form .card__content {
+    padding: 20px 10px 28px;
+  }
+  .form .form__checkbox {
+    padding-left: 20px;
+  }
+  .form .form__checkbox span {
+    font-size: 10px;
+  }
+  .form .form__checkbox .form-input-checkbox-border {
+    left: -2px;
+    transform: scale(75%);
   }
 }
 .body-resale .header__text-over {
