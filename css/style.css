@@ -804,7 +804,7 @@ h6 {
   .main-resale .buildings {
     display: flex;
     flex-direction: column;
-    row-gap: 23px;
+    row-gap: 22px;
   }
   .main-resale .card__title {
     font-size: 16px;
