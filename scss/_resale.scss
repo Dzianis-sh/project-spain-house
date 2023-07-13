@@ -1,8 +1,9 @@
 .body-resale {
-  .header__text-over {
-    justify-content: flex-start;
-    padding-top: 180px;
-  }
+  // .header__text-over {
+  //   justify-content: flex-start;
+  //   padding-top: 180px;
+  // }
+
   .header__text-over h1 {
     margin-bottom: 31px;
     display: flex;
@@ -13,9 +14,6 @@
 }
 
 .main-resale {
-  .container {
-    max-width: 1272px;
-  }
   .buildings {
     padding: 30px 0 35px;
     display: grid;
@@ -27,5 +25,65 @@
   .card__title {
     font-size: 18px;
     text-align: center;
+  }
+
+  .card__content {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 975px) {
+  .body-resale {
+    .header__text-over h1 {
+      line-height: 68px;
+      font-size: 64px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .body-resale {
+    .header__text-over h1 {
+      font-size: 38px;
+      line-height: 46px;
+      margin-bottom: 5px;
+    }
+
+    .header__text-over p {
+      padding: 0 15px;
+      font-size: 12px;
+      line-height: 28px;
+    }
+  }
+  .main-resale {
+    .buildings {
+      display: flex;
+      flex-direction: column;
+      row-gap: 23px;
+    }
+
+    .card__title {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .body-resale {
+    .header__text-over h1 {
+      font-size: 34px;
+      line-height: 42px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .main-resale {
+    .card__content {
+      padding: 10px;
+    }
+
+    .card__title {
+      font-size: 14px;
+    }
   }
 }
