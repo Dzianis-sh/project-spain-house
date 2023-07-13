@@ -14,12 +14,12 @@
 
 .main-resale {
   .container {
-    // max-width: 1272px;
+    max-width: 1272px;
   }
   .buildings {
     padding: 30px 0 35px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
     justify-content: center;
     gap: 38px;
   }
