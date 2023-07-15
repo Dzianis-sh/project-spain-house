@@ -27,6 +27,8 @@
   --links-color: #000000;
   --btn-active-color: #789cc3;
   --links-hover: #789cc3;
+  --pagination-btn: #dfdfdf;
+  --pagination-btn-active: #808080;
 }
 
 /* ============================================= */
@@ -769,8 +771,12 @@ h6 {
   text-align: center;
 }
 
+.main-resale {
+  padding: 25px 0 35px;
+}
 .main-resale .buildings {
-  padding: 30px 0 35px;
+  padding: 0;
+  margin-bottom: 55px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
   justify-content: center;
@@ -782,6 +788,43 @@ h6 {
 }
 .main-resale .card__content {
   padding: 10px 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  column-gap: 3px;
+  margin-bottom: 40px;
+}
+.pagination:last-child {
+  margin: 0;
+}
+.pagination__item {
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 0 8px;
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  background-color: var(--pagination-btn);
+  color: var(--secondary-grey-text);
+}
+.pagination__item:hover {
+  background-color: var(--pagination-btn-active);
+  color: var(--primary-white-text);
+}
+.pagination__item--active {
+  background-color: var(--pagination-btn-active);
+  color: var(--primary-white-text);
+}
+.pagination__btn-prev path, .pagination__btn-next path {
+  transition: all 0.3s;
+}
+.pagination__btn-prev:hover svg path,
+.pagination :hover svg path {
+  fill: var(--primary-white-text);
 }
 
 @media (max-width: 975px) {
