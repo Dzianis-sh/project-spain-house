@@ -5,6 +5,7 @@
   --ff-search-roboto: "Roboto", sans-serif;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #808080;
+  --select-hover-color: #f8f8f8;
   --primary-white-text: #ffffff;
   --primary-white-text-op: #ffffffcc;
   --primary-black-text: #000000;
@@ -74,9 +75,11 @@ body {
   font-weight: 400;
   line-height: 47px;
 }
+
 sup {
   font-size: 10px;
 }
+
 p {
   font-family: var(--ff-open-sans);
   font-size: 16px;
