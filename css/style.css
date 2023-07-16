@@ -128,7 +128,7 @@ h6 {
 /* header */
 .header {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
 }
 .header__top {
   position: fixed;
@@ -279,6 +279,14 @@ h6 {
 
 .resale-bg {
   background-image: url("../img/resale-bg.jpg");
+}
+
+.sotogrande-bg {
+  background-image: url("../img/sotogrande-bg.jpg");
+}
+
+.rent-bg {
+  background-image: url("../img/rent-bg.jpg");
 }
 
 /* end header */
@@ -790,6 +798,33 @@ h6 {
 .main-resale .card__content {
   padding: 10px 20px;
 }
+.main-resale .search-block {
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.main-resale .search-block label {
+  display: block;
+}
+.main-resale .search-block__row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--ff-search-roboto);
+  column-gap: 20px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.main-resale .search-block__id label {
+  border: 1px solid var(--color-border-input);
+  padding: 13px 19px;
+}
+.main-resale .search-block__id img {
+  margin-right: 17px;
+}
+.main-resale .search-block__btn {
+  padding: 10px 30px;
+}
 
 .pagination {
   display: flex;
@@ -915,6 +950,7 @@ p {
   background: var(--btn-color);
   text-align: center;
   font-size: 18px;
+  transition: all 0.3s;
   font-family: var(--ff-playfair);
   font-weight: 700;
   line-height: 28px;

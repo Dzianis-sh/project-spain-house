@@ -32,6 +32,41 @@
   .card__content {
     padding: 10px 20px;
   }
+
+  .search-block {
+    margin-bottom: 46px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    label {
+      display: block;
+    }
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--ff-search-roboto);
+      column-gap: 20px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__id {
+      label {
+        border: 1px solid var(--color-border-input);
+        padding: 13px 19px;
+      }
+
+      img {
+        margin-right: 17px;
+      }
+    }
+
+    &__btn {
+      padding: 10px 30px;
+    }
+  }
 }
 
 .pagination {

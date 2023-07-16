@@ -2,7 +2,7 @@
 
 .header {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
 
   &__top {
     position: fixed;
@@ -168,6 +168,14 @@
   background-image: url("../img/resale-bg.jpg");
 }
 
+.sotogrande-bg {
+  background-image: url("../img/sotogrande-bg.jpg");
+}
+
+.rent-bg {
+  background-image: url("../img/rent-bg.jpg");
+}
+
 /* end header */
 
 /* RESPONSIVE */
@@ -184,9 +192,6 @@
         text-transform: uppercase;
         max-width: 460px;
       }
-      // a {
-      //   display: none;
-      // }
     }
   }
   .header-top {
