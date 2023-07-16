@@ -19,6 +19,7 @@
   --btn-color: #808080;
   --mob-menu-hover: #c3e0ff;
   --color-border-lighter: #bcbcbc;
+  --btn-disabled: #bcbcbc;
   --sub-grey-darker: #606060;
   --card-title-grey-darker: #606060;
   --input-text: 18px;
@@ -926,6 +927,13 @@ p {
   background-color: var(--primary-bg-color);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
   border: 1px solid var(--btn-hover-border-color);
+}
+
+.event-none {
+  pointer-events: none;
+}
+.event-none svg path {
+  fill: var(--btn-disabled);
 }
 
 .wrapper {

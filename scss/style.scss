@@ -17,6 +17,7 @@
   --btn-color: #808080;
   --mob-menu-hover: #c3e0ff;
   --color-border-lighter: #bcbcbc;
+  --btn-disabled: #bcbcbc;
   --sub-grey-darker: #606060;
   --card-title-grey-darker: #606060;
   --input-text: 18px;
@@ -111,6 +112,15 @@ p {
 
 //   }
 // }
+
+.event-none {
+  pointer-events: none;
+
+  svg path {
+    fill: var(--btn-disabled);
+  }
+}
+
 .wrapper {
   min-height: 100%;
   width: 100%;
