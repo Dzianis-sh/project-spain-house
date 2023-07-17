@@ -445,7 +445,8 @@ h6 {
 .buildings__object a > img {
   aspect-ratio: auto 380/245;
 }
-.buildings .card__title {
+
+.main-buildings .card__title {
   font-size: 24px;
 }
 
@@ -479,7 +480,7 @@ h6 {
   }
 }
 @media (max-width: 376px) {
-  .buildings .card__title {
+  .main-buildings .card__title {
     font-size: 20px;
   }
 }
@@ -788,11 +789,7 @@ h6 {
   padding: 25px 0 35px;
 }
 .main-resale .buildings {
-  padding: 0;
   margin-bottom: 55px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
-  justify-content: center;
   gap: 38px;
 }
 .main-resale .card__title {
@@ -839,6 +836,13 @@ h6 {
 }
 .search-block__btn {
   padding: 10px 30px;
+}
+
+.buildings-col-mod {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
+  justify-content: center;
+  padding: 0;
 }
 
 .select {
@@ -1021,6 +1025,10 @@ h6 {
     font-size: 12px;
     line-height: 28px;
   }
+  .buildings-col-mod {
+    display: flex;
+    flex-direction: column;
+  }
   .main-resale .buildings {
     display: flex;
     flex-direction: column;
@@ -1043,6 +1051,37 @@ h6 {
     font-size: 14px;
   }
 }
+.main-sotogrande {
+  padding: 30px 0;
+}
+.main-sotogrande .buildings {
+  margin-bottom: 52px;
+  gap: 38px;
+}
+.main-sotogrande .pagination {
+  margin-bottom: 48px;
+}
+.main-sotogrande .search-block {
+  margin-bottom: 40px;
+  column-gap: 22px;
+}
+.main-sotogrande .search-block__row {
+  column-gap: 31px;
+}
+.main-sotogrande .search-block__row label {
+  justify-content: flex-start;
+  padding: 13px 23px;
+}
+.main-sotogrande .search-block__id {
+  flex: 1 1 60%;
+}
+.main-sotogrande .search-block .select {
+  flex: 1 1 40%;
+}
+.main-sotogrande .search-block .select__header {
+  padding: 13px 21px 13px 32px;
+}
+
 label {
   cursor: pointer;
 }
@@ -1435,6 +1474,7 @@ p {
   font-size: 12px;
 }
 .card__title {
+  text-align: center;
   font-family: var(--ff-playfair);
   font-size: 18px;
   font-weight: 700;
@@ -1810,6 +1850,11 @@ p {
     height: 100%;
   }
 }
+@media (max-width: 400px) {
+  .card__title {
+    font-size: 14px;
+  }
+}
 @media (max-width: 376px) {
   .about-info__description {
     font-size: 14px;
@@ -1827,11 +1872,11 @@ p {
   .instagram-gallery__item:last-child {
     transform: translateX(53%);
   }
-  .card__title {
-    font-size: 14px;
-  }
   .card__price {
     font-size: 14px;
+  }
+  .card__content {
+    padding: 10px;
   }
   .card__size-room, .card__terrace {
     font-size: 12px;

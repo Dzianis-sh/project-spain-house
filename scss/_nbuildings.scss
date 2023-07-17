@@ -13,10 +13,14 @@
       aspect-ratio: auto 380 / 245;
     }
   }
+}
+
+.main-buildings {
   .card__title {
     font-size: 24px;
   }
 }
+
 .header-arrow-scroll {
   display: none;
 }
@@ -49,7 +53,7 @@
   }
 }
 @media (max-width: 376px) {
-  .buildings {
+  .main-buildings {
     .card__title {
       font-size: 20px;
     }
