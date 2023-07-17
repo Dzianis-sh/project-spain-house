@@ -53,7 +53,6 @@
     column-gap: 20px;
   }
   &__id {
-    flex: 0 1;
     label {
       display: flex;
       align-items: center;
@@ -62,6 +61,7 @@
       padding: 13px 19px;
 
       input {
+        color: var(--secondary-grey-text);
         font-size: 18px;
         line-height: 22px;
         max-width: 165px;
@@ -186,6 +186,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 25px;
+    text-align: center;
     padding: 0 8px;
     border-radius: 3px;
     width: 25px;
@@ -255,6 +256,17 @@
 
   .pagination {
     margin-bottom: 35px;
+    &__item {
+      font-size: 20px;
+      width: 44px;
+      height: 42px;
+      padding: 0 15px;
+      line-height: 42px;
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 }
 
