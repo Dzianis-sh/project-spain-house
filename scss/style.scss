@@ -41,6 +41,8 @@
 @import "./_contacts.scss";
 @import "./_resale.scss";
 @import "./_sotogrande.scss";
+@import "./_rent.scss";
+@import "./_land.scss";
 // =============================================
 
 // Fonts
@@ -471,7 +473,7 @@ p {
 
   &__content {
     font-family: var(--ff-open-sans);
-    padding: 10px 25px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -940,7 +942,7 @@ p {
 @media (max-width: 400px) {
   .card {
     &__title {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }
@@ -950,6 +952,12 @@ p {
     &__description {
       font-size: 14px;
       line-height: 30px;
+    }
+  }
+
+  .card {
+    &__title {
+      font-size: 14px;
     }
   }
 

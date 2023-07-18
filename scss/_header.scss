@@ -2,7 +2,8 @@
 
 .header {
   position: relative;
-  height: 100vh;
+  //...
+  height: 100%;
 
   &__top {
     position: fixed;
@@ -19,12 +20,17 @@
     }
   }
 
+  &__bot-p-mob {
+    display: none;
+  }
+
   &__bot {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    //...
+    height: 100vh;
     padding-bottom: 25px;
     color: var(--primary-white-text);
     &::after {
@@ -176,6 +182,10 @@
   background-image: url("../img/rent-bg.jpg");
 }
 
+.land-bg {
+  background-image: url("../img/land-bg.jpg");
+}
+
 /* end header */
 
 /* RESPONSIVE */
@@ -224,6 +234,13 @@
 
   .header {
     height: 100vh;
+
+    &__bot-p-desk {
+      display: none;
+    }
+    &__bot-p-mob {
+      display: block;
+    }
     &__text-over {
       h1 {
         font-size: 35px;
@@ -232,7 +249,7 @@
       p {
         font-size: 13px;
         line-height: 30px;
-        padding: 0 33px;
+        padding: 0 30px;
       }
     }
     &__arrow-mobile {

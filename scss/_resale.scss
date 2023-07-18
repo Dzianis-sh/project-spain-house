@@ -80,6 +80,7 @@
   grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
   justify-content: center;
   padding: 0;
+  gap: 38px;
 }
 
 .select {
@@ -283,7 +284,7 @@
     }
 
     .header__text-over p {
-      padding: 0 15px;
+      padding: 0px 17px;
       font-size: 12px;
       line-height: 28px;
     }
@@ -310,7 +311,7 @@
 @media (max-width: 376px) {
   .body-resale {
     .header__text-over h1 {
-      font-size: 34px;
+      font-size: 28px;
       line-height: 42px;
       margin-bottom: 5px;
     }

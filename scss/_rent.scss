@@ -1,0 +1,38 @@
+.body-rent {
+  .header__text-over {
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.main-rent {
+  padding: 34px 0;
+
+  .buildings {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .body-rent {
+    .header__text-over {
+      h1 {
+        margin-bottom: 6px;
+      }
+      p {
+        padding: 0 39px;
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .body-rent {
+    .header__text-over {
+      p {
+        padding: 0 25px;
+      }
+    }
+  }
+}

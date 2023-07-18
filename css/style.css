@@ -129,7 +129,7 @@ h6 {
 /* header */
 .header {
   position: relative;
-  height: 100vh;
+  height: 100%;
 }
 .header__top {
   position: fixed;
@@ -145,12 +145,15 @@ h6 {
 .header__top img {
   filter: drop-shadow(3px 4px 3px #909090);
 }
+.header__bot-p-mob {
+  display: none;
+}
 .header__bot {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 100%;
+  height: 100vh;
   padding-bottom: 25px;
   color: var(--primary-white-text);
 }
@@ -290,6 +293,10 @@ h6 {
   background-image: url("../img/rent-bg.jpg");
 }
 
+.land-bg {
+  background-image: url("../img/land-bg.jpg");
+}
+
 /* end header */
 /* RESPONSIVE */
 @media (max-width: 1260px) {
@@ -329,6 +336,12 @@ h6 {
   .header {
     height: 100vh;
   }
+  .header__bot-p-desk {
+    display: none;
+  }
+  .header__bot-p-mob {
+    display: block;
+  }
   .header__text-over h1 {
     font-size: 35px;
     line-height: 47px;
@@ -336,7 +349,7 @@ h6 {
   .header__text-over p {
     font-size: 13px;
     line-height: 30px;
-    padding: 0 33px;
+    padding: 0 30px;
   }
   .header__arrow-mobile {
     position: absolute;
@@ -843,6 +856,7 @@ h6 {
   grid-template-columns: repeat(auto-fit, minmax(386px, 1fr));
   justify-content: center;
   padding: 0;
+  gap: 38px;
 }
 
 .select {
@@ -1021,7 +1035,7 @@ h6 {
     margin-bottom: 5px;
   }
   .body-resale .header__text-over p {
-    padding: 0 15px;
+    padding: 0px 17px;
     font-size: 12px;
     line-height: 28px;
   }
@@ -1040,7 +1054,7 @@ h6 {
 }
 @media (max-width: 376px) {
   .body-resale .header__text-over h1 {
-    font-size: 34px;
+    font-size: 28px;
     line-height: 42px;
     margin-bottom: 5px;
   }
@@ -1082,6 +1096,76 @@ h6 {
   padding: 13px 21px 13px 32px;
 }
 
+.body-rent .header__text-over h1 {
+  margin-bottom: 40px;
+}
+
+.main-rent {
+  padding: 34px 0;
+}
+.main-rent .buildings {
+  margin-bottom: 55px;
+}
+
+@media (max-width: 600px) {
+  .body-rent .header__text-over h1 {
+    margin-bottom: 6px;
+  }
+  .body-rent .header__text-over p {
+    padding: 0 39px;
+  }
+}
+@media (max-width: 376px) {
+  .body-rent .header__text-over p {
+    padding: 0 25px;
+  }
+}
+.body-land .header__text-over h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 100px;
+}
+
+.main-land {
+  padding: 36px 0px 34px;
+}
+.main-land .buildings {
+  margin-bottom: 55px;
+}
+
+@media (max-width: 1260px) {
+  .body-land .header__text-over h1 {
+    line-height: 84px;
+  }
+}
+@media (max-width: 600px) {
+  .body-land .header__text-over h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 15px;
+  }
+  .body-land .header__text-over p {
+    line-height: 25px;
+    padding: 0 100px;
+  }
+}
+@media (max-width: 376px) {
+  .body-land .header__text-over h1 {
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 8px;
+  }
+  .body-land .header__text-over p {
+    line-height: 25px;
+  }
+}
+@media (max-width: 374px) {
+  .body-land .header__text-over p {
+    padding: 0 45px;
+  }
+}
 label {
   cursor: pointer;
 }
@@ -1463,7 +1547,7 @@ p {
 }
 .card__content {
   font-family: var(--ff-open-sans);
-  padding: 10px 25px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1852,13 +1936,16 @@ p {
 }
 @media (max-width: 400px) {
   .card__title {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 376px) {
   .about-info__description {
     font-size: 14px;
     line-height: 30px;
+  }
+  .card__title {
+    font-size: 14px;
   }
   .mobile-menu__contacts {
     row-gap: 15px;
