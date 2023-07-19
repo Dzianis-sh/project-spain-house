@@ -88,6 +88,11 @@
       margin: 0;
     }
   }
+
+  .form__title {
+    font-weight: 700;
+    line-height: 28px;
+  }
 }
 
 .form {
@@ -115,9 +120,6 @@
   }
 
   &__title {
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 28px;
     text-align: center;
     margin-bottom: 26px;
   }
@@ -147,7 +149,7 @@
       color: var(--input-text-color);
       width: 100%;
       margin-bottom: 13px;
-      padding: 5px 22px;
+      padding: 8px 22px;
       border: 0.5px solid var(--color-border-input);
       &:focus {
         outline: 1px solid rgb(28, 160, 160);
