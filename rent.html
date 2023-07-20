@@ -245,7 +245,7 @@
           <button type="button" role="button" aria-label="search button" class="search-block__btn btn">поиск</button>
         </div>
         <div class="pagination">
-          <a href="./rent.html#objects" class="pagination__item pagination__btn-prev event-none"><svg width="10"
+          <a href="./rent.html#objects" data-page="prev" class="pagination__item pagination__btn-prev"><svg width="10"
               height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_146_509)">
                 <path
@@ -264,9 +264,9 @@
                 </clipPath>
               </defs>
             </svg></a>
-          <a href="./rent.html#objects" aria-label="first page" class="pagination__item pagination__item--active">1</a>
-          <a href="./rent-second.html#objects" aria-label="second page" class="pagination__item">2</a>
-          <a href="./rent-second.html#objects" aria-label="go to next page"
+          <a href="#" data-page-num="0" aria-label="first page" class="pagination__item pagination__item--active">1</a>
+          <a href="#" data-page-num="1" aria-label="second page" class="pagination__item">2</a>
+          <a href="./rent-second.html#objects" data-page="next" aria-label="go to next page"
             class="pagination__item pagination__btn-next"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_146_500)">
@@ -286,470 +286,608 @@
               </defs>
             </svg></a>
         </div>
-        <div class="buildings buildings-col-mod">
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
+        <div class="buildings-pages">
+          <div class="buildings-pages--active">
+            <div class="buildings buildings-col-mod">
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
                     </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">!!Page 1 !! Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">!!Page 1 !! Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">!!Page 1 !! Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">!!Page 1 !! Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">!!Page 1 !! Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">!!Page 1 !! Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">!!Page 1 !! Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
+                    </div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
+          <div class="buildings-pages__pg2">
+            <div class="buildings buildings-col-mod">
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
                     </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
+                      </a>
                     </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
                     </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
                     </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
+              <div class="buildings__object">
+                <div class="card">
+                  <div class="card__body">
+                    <div class="card__top">
+                      <a target="_blank" href="./object.html" class="card__bg">
+                        <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
+                      </a>
                     </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
+                    <div class="card__bot">
+                      <div class="card__content">
+                        <div class="card__id">Fuengirola - R3304693</div>
+                        <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
+                          class="card__title">Элитная
+                          вилла в стиле модерн</a>
+                        <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
+                            src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
+                        <div class="card__size-room">
+                          <div class="card__square">Площадь: 300 м<sup>2</sup></div>
+                          <div class="card__bedroom">Спальни: 5</div>
+                        </div>
+                        <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
+                      </div>
                     </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buildings__object">
-            <div class="card">
-              <div class="card__body">
-                <div class="card__top">
-                  <a target="_blank" href="./object.html" class="card__bg">
-                    <img width="2024" height="1516" src="./img/main/recom-4.jpg" alt="pic">
-                  </a>
-                </div>
-                <div class="card__bot">
-                  <div class="card__content">
-                    <div class="card__id">Fuengirola - R3304693</div>
-                    <a target="_blank" href="#" title="Нажмите, чтобы посмотреть подробное описание."
-                      class="card__title">Элитная
-                      вилла в стиле модерн</a>
-                    <a target="_blank" href="./object.html" class="card__price"><span>€4,195,000</span><img
-                        src="./img/card-obj-inner/dbl-arrow-up.svg" alt="ico"></a>
-                    <div class="card__size-room">
-                      <div class="card__square">Площадь: 300 м<sup>2</sup></div>
-                      <div class="card__bedroom">Спальни: 5</div>
-                    </div>
-                    <div class="card__terrace">Терасса: 25м<sup>2</sup></div>
                   </div>
                 </div>
               </div>
@@ -757,7 +895,7 @@
           </div>
         </div>
         <div class="pagination">
-          <a href="./rent.html#objects" class="pagination__item pagination__btn-prev event-none"><svg width="10"
+          <a href="./rent.html#objects" data-page="prev" class="pagination__item pagination__btn-prev"><svg width="10"
               height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_146_509)">
                 <path
@@ -776,9 +914,9 @@
                 </clipPath>
               </defs>
             </svg></a>
-          <a href="./rent.html#objects" aria-label="first page" class="pagination__item pagination__item--active">1</a>
-          <a href="./rent-second.html#objects" aria-label="second page" class="pagination__item">2</a>
-          <a href="./rent-second.html#objects" aria-label="go to next page"
+          <a href="#" data-page-num="0" aria-label="first page" class="pagination__item pagination__item--active">1</a>
+          <a href="#" data-page-num="1" aria-label="second page" class="pagination__item">2</a>
+          <a href="./rent-second.html#objects" data-page="next" aria-label="go to next page"
             class="pagination__item pagination__btn-next"><svg width="9" height="9" viewBox="0 0 9 9" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_146_500)">
@@ -796,8 +934,7 @@
                   <rect width="9" height="9" fill="white" />
                 </clipPath>
               </defs>
-            </svg>
-          </a>
+            </svg></a>
         </div>
       </div>
     </main>

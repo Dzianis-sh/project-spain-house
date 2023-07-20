@@ -1108,8 +1108,26 @@ h6 {
 .main-rent {
   padding: 34px 0;
 }
-.main-rent .buildings {
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.buildings-pages {
   margin-bottom: 55px;
+}
+.buildings-pages > div {
+  display: none;
+}
+.buildings-pages > div.buildings-pages--active {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 @media (max-width: 600px) {
@@ -1409,6 +1427,9 @@ h6 {
     row-gap: 15px;
     margin-bottom: 50px;
   }
+  .object-table__string {
+    padding: 0 33px;
+  }
   .object-table-hidden {
     display: none;
   }
@@ -1416,6 +1437,9 @@ h6 {
 @media (max-width: 600px) {
   .body-object {
     padding: 0;
+  }
+  .body-object .header-top {
+    padding-top: 19px;
   }
   .body-object .header {
     height: 100%;

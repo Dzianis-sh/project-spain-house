@@ -8,9 +8,27 @@
 
 .main-rent {
   padding: 34px 0;
+}
 
-  .buildings {
-    margin-bottom: 55px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.buildings-pages {
+  margin-bottom: 55px;
+  & > div {
+    display: none;
+  }
+  & > div.buildings-pages--active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
   }
 }
 
