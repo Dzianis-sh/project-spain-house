@@ -561,7 +561,7 @@ h6 {
 }
 
 .main-contacts .owner {
-  padding: 91px 0 121px;
+  padding: 91px 0 100px;
 }
 .main-contacts .owner__body {
   flex-direction: row;
@@ -582,7 +582,7 @@ h6 {
 }
 
 .form {
-  padding: 0 0 97px;
+  padding: 21px 0 97px;
 }
 .form__container {
   max-width: 845px;
@@ -713,6 +713,9 @@ h6 {
   }
 }
 @media (max-width: 900px) {
+  .form {
+    padding: 21px 0 53px;
+  }
   .form .form-contacts {
     flex-direction: column;
     align-items: center;
@@ -1169,7 +1172,7 @@ h6 {
   }
 }
 .main-object {
-  padding: 35px 0 63px;
+  padding-top: 35px;
 }
 .main-object .search-block {
   margin-bottom: 50px;
@@ -1192,6 +1195,9 @@ h6 {
   text-transform: none;
   letter-spacing: normal;
 }
+.main-object .form {
+  padding-bottom: 63px;
+}
 .main-object .form__title {
   font-weight: 700;
   line-height: 28px;
@@ -1205,7 +1211,7 @@ h6 {
 }
 
 .object {
-  margin-bottom: 58px;
+  margin-bottom: 37px;
 }
 .object__top {
   margin-bottom: 45px;
@@ -1221,24 +1227,32 @@ h6 {
 .object__img-screen {
   padding: 0 0 48% 0;
 }
-.object__about-card {
+.object__pic {
+  padding: 0 0 73% 0;
+}
+.object__about-table {
   flex: 1 1 calc(100% - 911px - 17px);
 }
 .object__img-screen {
+  position: relative;
   flex-grow: 0;
+}
+.object__img-screen:hover .slide-arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(100%);
 }
 .object__img-screen, .object__pic {
   position: relative;
   cursor: pointer;
 }
-.object__img-screen img, .object__pic img {
+.object__big-img, .object__pic-item {
   position: absolute;
   top: 0;
   left: 0;
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-  aspect-ratio: 1500/750;
 }
 .object__row {
   flex-grow: 1;
@@ -1271,6 +1285,10 @@ h6 {
 .object__text {
   font-size: 16px;
   line-height: 30px;
+}
+
+.object-table-hidden {
+  display: none;
 }
 
 .object-table {
@@ -1309,6 +1327,27 @@ h6 {
   font-weight: 400;
 }
 
+@media (max-width: 1260px) {
+  .object__about-table {
+    display: none;
+  }
+  .object__bot {
+    position: relative;
+  }
+  .object__description {
+    line-height: 25px;
+    text-align: justify;
+  }
+  .object-table-hidden {
+    display: block;
+    float: right;
+    width: 300px;
+    margin: 0 0 0 25px;
+  }
+  .form {
+    clear: both;
+  }
+}
 @media (max-width: 975px) {
   .main-object .search-block {
     align-items: normal;
@@ -1320,6 +1359,9 @@ h6 {
     align-items: center;
     column-gap: 14px;
   }
+  .main-object .form {
+    padding-bottom: 53px;
+  }
   .main-object .form__title {
     text-align: center;
     font-size: 30px;
@@ -1330,6 +1372,22 @@ h6 {
   .main-object .form__subtitle {
     max-width: 598px;
     margin: 0 auto 21px;
+  }
+}
+@media (max-width: 769px) {
+  .object {
+    margin-bottom: 28px;
+  }
+  .object__about-table {
+    display: block;
+  }
+  .object__top {
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 50px;
+  }
+  .object-table-hidden {
+    display: none;
   }
 }
 @media (max-width: 600px) {

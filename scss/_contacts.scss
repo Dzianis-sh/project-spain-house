@@ -71,7 +71,7 @@
 
 .main-contacts {
   .owner {
-    padding: 91px 0 121px;
+    padding: 91px 0 100px;
     &__body {
       flex-direction: row;
       column-gap: 51px;
@@ -96,7 +96,7 @@
 }
 
 .form {
-  padding: 0 0 97px;
+  padding: 21px 0 97px;
 
   &__container {
     max-width: 845px;
@@ -250,6 +250,7 @@
 
 @media (max-width: 900px) {
   .form {
+    padding: 21px 0 53px;
     .form-contacts {
       flex-direction: column;
       align-items: center;

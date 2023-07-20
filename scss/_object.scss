@@ -2,8 +2,7 @@
 // }
 
 .main-object {
-  padding: 35px 0 63px;
-
+  padding-top: 35px;
   .search-block {
     margin-bottom: 50px;
     &__backto-btn {
@@ -32,6 +31,7 @@
   }
 
   .form {
+    padding-bottom: 63px;
     &__title {
       font-weight: 700;
       line-height: 28px;
@@ -48,12 +48,16 @@
 }
 
 .object {
-  margin-bottom: 58px;
+  margin-bottom: 37px;
 
   &__top {
     margin-bottom: 45px;
     display: flex;
     column-gap: 17px;
+  }
+
+  &__bot {
+    // display: flex;
   }
 
   &__slider {
@@ -69,28 +73,41 @@
     padding: 0 0 48% 0;
   }
 
-  &__about-card {
+  &__pic {
+    padding: 0 0 73% 0;
+  }
+
+  &__about-table {
     flex: 1 1 calc((100% - 911px) - 17px);
     // flex: 1 1 calc(25% - 17px);
   }
 
   &__img-screen {
+    position: relative;
     flex-grow: 0;
+    &:hover {
+      .slide-arrow {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(100%);
+      }
+    }
   }
 
   &__img-screen,
   &__pic {
     position: relative;
     cursor: pointer;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      max-width: 100%;
-      height: 100%;
-      object-fit: cover;
-      aspect-ratio: 1500 / 750;
-    }
+  }
+
+  &__big-img,
+  &__pic-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__row {
@@ -129,6 +146,10 @@
     font-size: 16px;
     line-height: 30px;
   }
+}
+
+.object-table-hidden {
+  display: none;
 }
 
 .object-table {
@@ -171,6 +192,34 @@
   }
 }
 
+@media (max-width: 1260px) {
+  .object {
+    &__about-table {
+      display: none;
+    }
+
+    &__bot {
+      position: relative;
+    }
+
+    &__description {
+      line-height: 25px;
+      text-align: justify;
+    }
+  }
+
+  .object-table-hidden {
+    display: block;
+    float: right;
+    width: 300px;
+    margin: 0 0 0 25px;
+  }
+
+  .form {
+    clear: both;
+  }
+}
+
 @media (max-width: 975px) {
   .main-object {
     .search-block {
@@ -184,6 +233,7 @@
       }
     }
     .form {
+      padding-bottom: 53px;
       &__title {
         text-align: center;
         font-size: 30px;
@@ -201,6 +251,25 @@
         margin: 0 auto 21px;
       }
     }
+  }
+}
+
+@media (max-width: 769px) {
+  .object {
+    margin-bottom: 28px;
+    &__about-table {
+      display: block;
+    }
+
+    &__top {
+      flex-direction: column;
+      row-gap: 15px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .object-table-hidden {
+    display: none;
   }
 }
 
