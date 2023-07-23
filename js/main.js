@@ -38,23 +38,33 @@ let select = function () {
   let selectHeader = document.querySelectorAll('.select__header');
   let selectItem = document.querySelectorAll('.select__item');
 
-  selectHeader.forEach(item => {
-    // item.addEventListener('click', selectToggle);
-    item.addEventListener('click', function () {
-      let selectAll = document.querySelectorAll('.select');
-      selectAll.forEach(function (item) {
-        item.classList.remove('is-active');
+  for (let i = 0; i < selectHeader.length; i++) {
+    selectHeader[i].addEventListener("click", function (event) {
+      const currentTarget = event.target.closest(".select");
+
+      [].forEach.call(selectHeader, function (el) {
+        const item = el.closest(".select");
+        if (item !== currentTarget) {
+          el.closest(".select").classList.remove("is-active");
+        }
       });
-      this.parentElement.classList.add('is-active');
+
+      currentTarget.classList.toggle("is-active");
+
     });
-  });
+  }
 
   selectItem.forEach(item => {
     item.addEventListener('click', selectChoose);
   });
 
+
   // function selectToggle() {
-  //   this.parentElement.classList.toggle('is-active');
+  //   let selectAll = document.querySelectorAll('.select');
+  //   selectAll.forEach(function (item) {
+  //     item.classList.remove('is-active');
+  //   });
+  //   this.parentElement.classList.add('is-active');
   // }
 
   function selectChoose() {
@@ -64,13 +74,14 @@ let select = function () {
     currentText.innerText = text;
     select.classList.remove('is-active');
   }
+
 };
 
 select();
 
 
 window.addEventListener("click", function (event) {
-  if (event.target.closest(".select")) {
+  if (event.target.closest(".select") || event.target.closest(".select__header")) {
     return;
   }
   const sel = document.querySelectorAll(".select");
