@@ -17,6 +17,8 @@
   --color-border: #808080;
   --color-border-input: #808080;
   --btn-color: #808080;
+  --btn-active: #bcbcbc;
+  --btn-active-text: #e9e9e9;
   --mob-menu-hover: #c3e0ff;
   --color-border-lighter: #bcbcbc;
   --btn-disabled: #bcbcbc;
@@ -101,6 +103,11 @@ p {
     background-color: var(--primary-bg-color);
     @include btn-box-shadow();
     border: 1px solid var(--btn-hover-border-color);
+  }
+
+  &:active {
+    background-color: var(--btn-active);
+    color: var(--btn-active-text);
   }
 }
 

@@ -384,6 +384,10 @@
       background: var(--secondary-bg-color);
       color: var(--primary-white-text-op);
     }
+    &:active {
+      background: var(--btn-active);
+      border: 2px solid transparent;
+    }
   }
 }
 

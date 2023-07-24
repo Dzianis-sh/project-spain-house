@@ -262,6 +262,12 @@
       padding-right: 5px;
     }
 
+    &__title {
+      text-align: center;
+      font-size: 30px;
+      line-height: 35px;
+    }
+
     .card__content {
       padding: 20px 14px 28px;
     }
@@ -323,7 +329,7 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .header-contacts {
     .header-contacts-h1 {
       font-size: 35px;
@@ -340,6 +346,13 @@
     .card__content {
       padding: 20px 10px 28px;
     }
+
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+      margin-bottom: 18px;
+    }
+
     .form__checkbox {
       padding-left: 20px;
       span {

@@ -19,6 +19,8 @@
   --color-border: #808080;
   --color-border-input: #808080;
   --btn-color: #808080;
+  --btn-active: #bcbcbc;
+  --btn-active-text: #e9e9e9;
   --mob-menu-hover: #c3e0ff;
   --color-border-lighter: #bcbcbc;
   --btn-disabled: #bcbcbc;
@@ -564,6 +566,10 @@ p {
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
   border: 1px solid var(--btn-hover-border-color);
 }
+.btn:active {
+  background-color: var(--btn-active);
+  color: var(--btn-active-text);
+}
 
 .event-none {
   pointer-events: none;
@@ -1016,6 +1022,10 @@ p {
   border: 2px solid var(--color-border);
   background: var(--secondary-bg-color);
   color: var(--primary-white-text-op);
+}
+.owner-info__contacts:active {
+  background: var(--btn-active);
+  border: 2px solid transparent;
 }
 
 /* END OWNER*/
@@ -1589,6 +1599,11 @@ p {
   .form .contacts-item:first-child {
     padding-right: 5px;
   }
+  .form__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+  }
   .form .card__content {
     padding: 20px 14px 28px;
   }
@@ -1634,7 +1649,7 @@ p {
     display: none;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .header-contacts .header-contacts-h1 {
     font-size: 35px;
     line-height: 46px;
@@ -1647,6 +1662,11 @@ p {
   }
   .form .card__content {
     padding: 20px 10px 28px;
+  }
+  .form__title {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 18px;
   }
   .form .form__checkbox {
     padding-left: 20px;
