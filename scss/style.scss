@@ -204,12 +204,19 @@ p {
 
   &__sub-menu {
     padding-left: 40px;
-    display: none;
-    max-height: 0;
+    transition: all 0.4s ease-in;
+    max-height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
   }
 
   &__sub-menu.visible {
-    max-height: 100%;
+    max-height: 500px;
+
+    .mobile-menu__sub-open {
+      transform: rotate(-45deg);
+    }
   }
 
   &__sub-item {

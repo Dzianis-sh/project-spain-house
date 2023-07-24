@@ -20,11 +20,14 @@ window.addEventListener('scroll', () => {
 
 // Show/hide menu
 const menuButton = document.querySelector("#menu-btn");
+const menuClose = document.querySelector(".mobile-menu__close");
+
 menuButton.addEventListener("click", function () {
   const menu = document.querySelector(".mobile-menu");
   menu.classList.remove("hidden");
 });
-window.addEventListener("click", function (event) {
+
+menuClose.addEventListener("click", function (event) {
   if (event.target.closest("#menu-btn")) {
     return;
   }
@@ -89,20 +92,7 @@ window.addEventListener("click", function (event) {
   sel.forEach(function (item) {
     item.classList.remove('is-active');
   });
-
 });
-
-
-// toggle sub-menu
-
-// let subOpenbtn = document.querySelector('.mobile-menu__sub-open');
-// let subActive = document.querySelector('.mobile-menu__sub-menu');
-
-// subOpenbtn.addEventListener('click', function () {
-//   subActive.classList.toggle('visible');
-
-
-// });
 
 // Page Contols
 
@@ -170,4 +160,17 @@ pageControls.forEach(function (pageBtn) {
 
 })
 showPage(0);
+
+// toggle sub-menu
+
+function toggleSubMenu() {
+  const subOpenbtn = document.querySelector('.mobile-menu__sub-open');
+  const subActive = document.querySelector('.mobile-menu__sub-menu');
+
+  subOpenbtn.addEventListener('click', function () {
+    subActive.classList.toggle('visible');
+  });
+}
+
+toggleSubMenu();
 
