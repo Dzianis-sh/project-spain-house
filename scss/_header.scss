@@ -82,6 +82,12 @@
   align-items: center;
   position: absolute;
   bottom: 0;
+  span {
+    animation: span-op 3s linear infinite;
+  }
+  svg {
+    animation: arrowdownobj 3s linear infinite normal;
+  }
 
   span {
     color: var(--primary-white-text);
@@ -256,6 +262,9 @@
       position: absolute;
       bottom: 0;
       display: block;
+      svg {
+        animation: arrowdown 3s linear infinite normal;
+      }
     }
   }
 
