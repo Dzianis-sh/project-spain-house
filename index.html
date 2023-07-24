@@ -73,7 +73,7 @@
       </div>
     </header>
     <section class="mobile-menu hidden">
-      <div class="mobile-menu__body">
+      <nav class="mobile-menu__body">
         <button type="button" class="mobile-menu__close">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_113_194)">
@@ -100,8 +100,25 @@
         <ul class="mobile-menu__menu-list">
           <li class="mobile-menu__list-item"><a aria-label="go to main page" href="./index.html">Главная</a>
           </li>
-          <li class="mobile-menu__list-item"><a aria-label="go to new buildings page"
-              href="./nbuildings.html">Новостройки&nbsp;<span>&plus;</span></a></li>
+          <li class="mobile-menu__list-item mobile-menu__list-item--sub">
+            <div class="mobile-menu__list-item--sub-flex"><a aria-label="go to new buildings page"
+                href="./nbuildings.html">Новостройки</a>&nbsp;&nbsp;
+              <span class="mobile-menu__sub-open">&plus;</span>
+            </div>
+            <ul class="mobile-menu__sub-menu">
+              <li class="mobile-menu__sub-item"><a href="#">Sotogrande</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Casares</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Estepona</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">New Golden Mile</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Benahavis</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Marbella</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Mijas Kosta</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Fuengirola</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Benalmadena</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Torremolinos</a></li>
+              <li class="mobile-menu__sub-item"><a href="#">Malaga</a></li>
+            </ul>
+          </li>
           <li class="mobile-menu__list-item"><a aria-label="go to resale page" href="./resale.html">вторичная
               недвижимость</a></li>
           <li class="mobile-menu__list-item"><a aria-label="go to rent page" href="./rent.html">аренда</a>
@@ -151,7 +168,7 @@
             </svg>
           </a>
         </div>
-      </div>
+      </nav>
     </section>
     <main class="main">
       <section id="about" class="about">

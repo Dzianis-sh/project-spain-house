@@ -130,6 +130,8 @@ p {
 
   &__body {
     display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background: var(--primary-bg-color);
     flex-direction: column;
     align-items: flex-start;
@@ -188,6 +190,32 @@ p {
     }
   }
 
+  // &__list-item--sub {
+  // }
+
+  &__list-item--sub-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sub-open {
+    cursor: pointer;
+  }
+
+  &__sub-menu {
+    padding-left: 40px;
+    display: none;
+    max-height: 0;
+  }
+
+  &__sub-menu.visible {
+    max-height: 100%;
+  }
+
+  &__sub-item {
+    list-style: disc;
+  }
+
   &__contacts {
     display: flex;
     flex-direction: column-reverse;
@@ -217,6 +245,12 @@ p {
       }
     }
   }
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .hidden {

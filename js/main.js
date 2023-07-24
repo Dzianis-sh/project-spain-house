@@ -81,7 +81,7 @@ select();
 
 
 window.addEventListener("click", function (event) {
-  if (event.target.closest(".select") || event.target.closest(".select__header")) {
+  if (event.target.closest(".select")) {
     return;
   }
   const sel = document.querySelectorAll(".select");
@@ -92,6 +92,17 @@ window.addEventListener("click", function (event) {
 
 });
 
+
+// toggle sub-menu
+
+// let subOpenbtn = document.querySelector('.mobile-menu__sub-open');
+// let subActive = document.querySelector('.mobile-menu__sub-menu');
+
+// subOpenbtn.addEventListener('click', function () {
+//   subActive.classList.toggle('visible');
+
+
+// });
 
 // Page Contols
 
