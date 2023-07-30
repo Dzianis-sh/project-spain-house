@@ -696,6 +696,22 @@ p {
   transform: scale(120%);
 }
 
+.itc-slider {
+  height: 100%;
+}
+
+.itc-slider-wrapper {
+  height: 100%;
+}
+
+.itc-slider-items {
+  height: 100%;
+}
+
+.itc-slider-item {
+  display: block;
+}
+
 .visible {
   display: block;
   opacity: 1;
