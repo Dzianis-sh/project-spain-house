@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spain House - Home</title>
   <link rel="icon" href="img/meta-icon.ico" type="image/icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -208,23 +209,26 @@
                   <div class="card">
                     <div class="card__body">
                       <div class="card__top">
-                        <button class="card__slide-left slide-arrow slider-btn slider-btn-prev">
+                        <button class="card__slide-left slide-arrow slider-btn slider-btn-prev swiper-button-prev">
                           <img src="img/card-obj-inner/slide-left.svg" alt="ico">
                         </button>
-                        <button class="card__slide-right slide-arrow slider-btn slider-btn-next">
+                        <button class="card__slide-right slide-arrow slider-btn slider-btn-next swiper-button-next">
                           <img src="img/card-obj-inner/slide-right.svg" alt="ico">
                         </button>
-                        <div class="slider">
-                          <div class="slider-items">
-                            <a target="_blank" href="./object.html" class="card__bg slider-item">
+                        <!-- Slider main container -->
+                        <div class="swiper slider">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <a target="_blank" href="./object.html" class="card__bg swiper-slide">
                               <img width="1200" height="600" src="./img/main/recom-1.jpg" alt="pic">
                             </a>
-                            <!-- <a target="_blank" href="./object.html" class="card__bg slider-item">
+                            <a target="_blank" href="./object.html" class="card__bg swiper-slide">
                               <img width="1200" height="600" src="./img/main/recom-2.jpg" alt="pic">
                             </a>
-                            <a target="_blank" href="./object.html" class="card__bg slider-item">
+                            <a target="_blank" href="./object.html" class="card__bg swiper-slide">
                               <img width="1200" height="600" src="./img/main/recom-3.jpg" alt="pic">
-                            </a> -->
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -451,7 +455,9 @@
       </div>
     </footer>
   </div>
-  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>
