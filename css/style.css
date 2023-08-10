@@ -696,22 +696,6 @@ p {
   transform: scale(120%);
 }
 
-.itc-slider {
-  height: 100%;
-}
-
-.itc-slider-wrapper {
-  height: 100%;
-}
-
-.itc-slider-items {
-  height: 100%;
-}
-
-.itc-slider-item {
-  display: block;
-}
-
 .visible {
   display: block;
   opacity: 1;
@@ -810,6 +794,14 @@ p {
 }
 .recommend__btn {
   padding: 14px 22px;
+}
+
+.slider {
+  height: 100%;
+}
+
+.slider-items {
+  height: 100%;
 }
 
 .slide-arrow {

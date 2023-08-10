@@ -89,6 +89,14 @@
   }
 }
 
+.slider {
+  height: 100%;
+}
+
+.slider-items {
+  height: 100%;
+}
+
 .slide-arrow {
   &:active {
     background-color: var(--btn-active-color);
