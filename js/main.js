@@ -5,6 +5,7 @@ let defaultOffset = 200;
 const fixedHeader = document.querySelector('.header__top');
 
 const scrollPosition = () => window.scrollY || document.querySelector.scrollTop;
+console.log(scrollPosition())
 const containHide = () => fixedHeader.classList.contains('hide');
 
 window.addEventListener('scroll', () => {
@@ -21,17 +22,13 @@ window.addEventListener('scroll', () => {
 // Show/hide menu
 const menuButton = document.querySelector("#menu-btn");
 const menuClose = document.querySelector(".mobile-menu__close");
+const menu = document.querySelector(".mobile-menu");
 
 menuButton.addEventListener("click", function () {
-  const menu = document.querySelector(".mobile-menu");
   menu.classList.remove("hidden");
 });
 
-menuClose.addEventListener("click", function (event) {
-  if (event.target.closest("#menu-btn")) {
-    return;
-  }
-  const menu = document.querySelector(".mobile-menu");
+menuClose.addEventListener("click", function () {
   menu.classList.add("hidden");
 });
 
@@ -61,15 +58,6 @@ let select = function () {
     item.addEventListener('click', selectChoose);
   });
 
-
-  // function selectToggle() {
-  //   let selectAll = document.querySelectorAll('.select');
-  //   selectAll.forEach(function (item) {
-  //     item.classList.remove('is-active');
-  //   });
-  //   this.parentElement.classList.add('is-active');
-  // }
-
   function selectChoose() {
     let text = this.innerText,
       select = this.closest('.select'),
@@ -81,7 +69,6 @@ let select = function () {
 };
 
 select();
-
 
 window.addEventListener("click", function (event) {
   if (event.target.closest(".select")) {

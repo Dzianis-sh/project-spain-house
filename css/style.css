@@ -834,7 +834,7 @@ p {
   margin-bottom: 65px;
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, minmax(auto, 550px) minmax(auto, 435px));
   column-gap: 30px;
   row-gap: 26px;
 }
@@ -918,16 +918,6 @@ p {
   position: relative;
   overflow: hidden;
   flex: 1 1 auto;
-}
-.card__slide-left {
-  top: 50%;
-  left: 16px;
-  margin-top: -17px;
-}
-.card__slide-right {
-  top: 50%;
-  right: 16px;
-  margin-top: -17px;
 }
 .card__bot {
   flex: 0 1 auto;
@@ -2159,24 +2149,28 @@ p {
   column-gap: 17px;
 }
 .object__slider {
+  margin-bottom: 12px;
+  height: 440px;
+}
+.object__slider-block {
+  min-width: 0;
   flex: 1 1 calc(100% - 307px - 17px);
+}
+.object__pic-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 12px;
+  object-fit: cover;
 }
-.object__img-screen {
-  padding: 0 0 48% 0;
-}
-.object__pic {
-  padding: 0 0 70% 0;
+.object__big-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .object__about-table {
   flex: 1 1 calc(100% - 911px - 17px);
-}
-.object__img-screen {
-  position: relative;
-  flex-grow: 0;
 }
 .object__img-screen:hover .slide-arrow {
   opacity: 1;
@@ -2187,20 +2181,8 @@ p {
   position: relative;
   cursor: pointer;
 }
-.object__big-img, .object__pic-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .object__row {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: auto;
-  column-gap: 10px;
+  height: 86px;
 }
 .object__pic--slideshow::after {
   content: url("../img/icons/slide-show.svg");
@@ -2213,9 +2195,6 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-}
-.object__pic--active {
-  border: 2px solid var(--object-slider-active);
 }
 .object__title {
   font-size: 24px;
@@ -2331,15 +2310,10 @@ p {
     display: block;
   }
   .object__slider {
-    row-gap: 6px;
+    margin-bottom: 10px;
   }
   .object__row {
     overflow-x: scroll;
-    grid-template-columns: repeat(7, 123px);
-    column-gap: 7px;
-  }
-  .object__img-screen {
-    padding: 0 0 55% 0;
   }
   .object__top {
     flex-direction: column;

@@ -60,35 +60,45 @@
     column-gap: 17px;
   }
 
-  // &__bot {
-  // display: flex;
+  &__slider {
+    margin-bottom: 12px;
+    height: 440px;
+  }
+
+  &__slider-block {
+    min-width: 0;
+    flex: 1 1 calc(100% - 307px - 17px);
+
+    // max-width: 900px;
+  }
+  // &__pic {
+  //   position: relative;
   // }
 
-  &__slider {
-    flex: 1 1 calc((100% - 307px) - 17px);
-    // flex: 1 1 calc(74% - 17px);
+  &__pic-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 12px;
+    object-fit: cover;
+  }
+  &__big-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  &__img-screen {
-    padding: 0 0 48% 0;
-  }
-
-  &__pic {
-    padding: 0 0 70% 0;
-  }
+  // &__img-screen {
+  //   position: relative;
+  // }
 
   &__about-table {
     flex: 1 1 calc((100% - 911px) - 17px);
-    // flex: 1 1 calc(25% - 17px);
   }
 
   &__img-screen {
-    position: relative;
-    flex-grow: 0;
+    // flex-grow: 0;
     &:hover {
       .slide-arrow {
         opacity: 1;
@@ -104,22 +114,11 @@
     cursor: pointer;
   }
 
-  &__big-img,
-  &__pic-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   &__row {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto;
-    column-gap: 10px;
+    height: 86px;
+    // display: grid;
+    // grid-template-columns: repeat(7, 1fr);
+    // grid-template-rows: 80px;
   }
 
   &__pic--slideshow::after {
@@ -133,10 +132,6 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  &__pic--active {
-    border: 2px solid var(--object-slider-active);
   }
 
   &__title {
@@ -277,17 +272,15 @@
     }
 
     &__slider {
-      row-gap: 6px;
+      margin-bottom: 10px;
     }
 
     &__row {
       overflow-x: scroll;
-      grid-template-columns: repeat(7, 123px);
-      column-gap: 7px;
     }
 
     &__img-screen {
-      padding: 0 0 55% 0;
+      // padding: 0 0 20% 0;
     }
 
     &__top {
