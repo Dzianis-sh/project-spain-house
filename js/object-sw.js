@@ -1,13 +1,16 @@
 
 const swiper = new Swiper('.object__slider', {
   // Optional parameters
-  loop: false,
+  loop: true,
   // setWrapperSize: false,
   speed: 400,
   effect: 'fade',
   fadeEffect: {
     crossFade: true
   },
+  // autoplay: {
+  //   delay: 4000,
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

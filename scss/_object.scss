@@ -68,6 +68,13 @@
   &__slider-block {
     min-width: 0;
     flex: 1 1 calc(100% - 307px - 17px);
+    &:hover {
+      .slide-arrow {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(100%);
+      }
+    }
   }
 
   // &__pic {
@@ -98,13 +105,6 @@
 
   &__img-screen {
     // flex-grow: 0;
-    &:hover {
-      .slide-arrow {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(100%);
-      }
-    }
   }
 
   &__img-screen,
@@ -148,6 +148,12 @@
   &__text {
     font-size: 16px;
     line-height: 30px;
+  }
+}
+
+.swiper-slide-thumb-active {
+  .object__pic-item {
+    border: 2px solid var(--object-slider-active);
   }
 }
 

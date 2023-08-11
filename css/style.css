@@ -2156,6 +2156,11 @@ p {
   min-width: 0;
   flex: 1 1 calc(100% - 307px - 17px);
 }
+.object__slider-block:hover .slide-arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(100%);
+}
 .object__pic-item {
   position: absolute;
   top: 0;
@@ -2171,11 +2176,6 @@ p {
 }
 .object__about-table {
   flex: 1 1 calc(100% - 911px - 17px);
-}
-.object__img-screen:hover .slide-arrow {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(100%);
 }
 .object__img-screen, .object__pic {
   position: relative;
@@ -2210,6 +2210,10 @@ p {
 .object__text {
   font-size: 16px;
   line-height: 30px;
+}
+
+.swiper-slide-thumb-active .object__pic-item {
+  border: 2px solid var(--object-slider-active);
 }
 
 .object-table-hidden {
