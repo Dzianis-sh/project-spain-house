@@ -68,9 +68,8 @@
   &__slider-block {
     min-width: 0;
     flex: 1 1 calc(100% - 307px - 17px);
-
-    // max-width: 900px;
   }
+
   // &__pic {
   //   position: relative;
   // }
@@ -79,7 +78,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -119,6 +118,11 @@
     // display: grid;
     // grid-template-columns: repeat(7, 1fr);
     // grid-template-rows: 80px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__pic--slideshow::after {
@@ -277,10 +281,6 @@
 
     &__row {
       overflow-x: scroll;
-    }
-
-    &__img-screen {
-      // padding: 0 0 20% 0;
     }
 
     &__top {

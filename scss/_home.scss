@@ -126,7 +126,7 @@
     margin-bottom: 65px;
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, minmax(auto, 550px) minmax(auto, 435px));
+    grid-template-rows: minmax(auto, 550px) minmax(auto, 435px);
     column-gap: 30px;
     row-gap: 26px;
   }
