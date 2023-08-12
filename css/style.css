@@ -963,9 +963,60 @@ p {
 }
 
 /* END CARD */
-/* SLIDER*/
-/* SLIDER END*/
 /* end recommend*/
+/* MODAL(EXPAND) IMG */
+.modal-img {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
+  background-color: rgba(14, 14, 14, 0.9);
+}
+.modal-img__content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.modal-img__img {
+  cursor: zoom-out;
+}
+.modal-img__close {
+  cursor: pointer;
+  color: rgb(170, 170, 170);
+  font-size: 60px;
+  user-select: none;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.modal-img__close:hover {
+  color: var(--links-hover);
+}
+
+body.scrollock {
+  overflow-y: hidden;
+}
+
+/* полоса прокрутки */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #b5b5b5;
+}
+
+/* ползунок */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #828282;
+}
+
+/* end MODAL(EXPAND) IMG */
 /* INSTAGRAM */
 .instagram__container {
   padding: 38px 0 60px;

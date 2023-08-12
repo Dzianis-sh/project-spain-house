@@ -278,10 +278,65 @@
 
 /* END CARD */
 
-/* SLIDER*/
-/* SLIDER END*/
-
 /* end recommend*/
+
+/* MODAL(EXPAND) IMG */
+
+.modal-img {
+  // display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease;
+  // overflow: hidden;
+  background-color: rgba(14, 14, 14, 0.9);
+
+  &__content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  &__img {
+    cursor: zoom-out;
+  }
+  &__close {
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+    font-size: 60px;
+    user-select: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    &:hover {
+      color: var(--links-hover);
+    }
+  }
+}
+
+body.scrollock {
+  overflow-y: hidden;
+}
+
+/* полоса прокрутки */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #b5b5b5;
+}
+
+/* ползунок */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #828282;
+}
+
+/* end MODAL(EXPAND) IMG */
 
 /* INSTAGRAM */
 

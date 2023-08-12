@@ -5,7 +5,6 @@ let defaultOffset = 200;
 const fixedHeader = document.querySelector('.header__top');
 
 const scrollPosition = () => window.scrollY || document.querySelector.scrollTop;
-console.log(scrollPosition())
 const containHide = () => fixedHeader.classList.contains('hide');
 
 window.addEventListener('scroll', () => {
@@ -161,3 +160,51 @@ function toggleSubMenu() {
 
 toggleSubMenu();
 
+// expand images
+const imgItem = document.querySelectorAll('.instagram-gallery__item');
+const ItemImgModal = document.querySelector('.modal-img__img');
+const ItemsImgAll = document.querySelectorAll('.instagram-gallery__item > img');
+const modImgBlock = document.querySelector('.modal-img');
+const modImgItem = document.querySelector('.modal-img__item');
+const body = document.querySelector('body');
+const closeBtnModal = document.querySelector('.modal-img__close');
+// console.log(ItemImgIs);
+
+
+let currentItem;
+ItemsImgAll.forEach(img => {
+  img.addEventListener('click', function () {
+    currentItem = img; console.log(currentItem);
+    return currentItem;
+  })
+});
+
+
+function expand(event) {
+  if (event.target) {
+    modImgBlock.style.visibility = 'visible';
+    modImgBlock.style.opacity = '1';
+    body.classList.add('scrollock');
+    ItemImgModal.src = currentItem.src;
+  }
+}
+
+imgItem.forEach(img => {
+  img.addEventListener('click', expand);
+});
+
+window.addEventListener('click', function (event) {
+  if (event.target.closest('.modal-img')) {
+    modImgBlock.style.visibility = 'hidden';
+    modImgBlock.style.opacity = '0';
+    body.classList.remove('scrollock');
+    ItemImgModal.src = "";
+  }
+});
+
+// Или повесить слушателя на сам Крестик
+
+// closeBtnModal.addEventListener('click', function () {
+//   modImgBlock.style.display = 'none';
+//   body.classList.remove('scroll-out');
+// });
