@@ -283,6 +283,7 @@
 
     &__slider {
       margin-bottom: 10px;
+      height: 350px;
     }
 
     &__row {
@@ -346,6 +347,11 @@
     &__btn {
       align-self: center;
     }
+  }
+}
+@media (max-width: 481px) {
+  .object__slider {
+    height: 380px;
   }
 }
 

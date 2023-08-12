@@ -2320,6 +2320,7 @@ p {
   }
   .object__slider {
     margin-bottom: 10px;
+    height: 350px;
   }
   .object__row {
     overflow-x: scroll;
@@ -2365,6 +2366,11 @@ p {
   }
   .search-block__btn {
     align-self: center;
+  }
+}
+@media (max-width: 481px) {
+  .object__slider {
+    height: 380px;
   }
 }
 @media (max-width: 376px) {
