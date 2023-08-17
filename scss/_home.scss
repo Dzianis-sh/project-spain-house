@@ -326,14 +326,15 @@ body.scrollock {
 
 /* полоса прокрутки */
 ::-webkit-scrollbar {
-  width: 8px;
-  background-color: #b5b5b5;
+  width: 0px;
+  // background-color: #b5b5b5;
 }
 
 /* ползунок */
 ::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background: #828282;
+  width: 0px;
+  // border-radius: 3px;
+  // background: #828282;
 }
 
 /* end MODAL(EXPAND) IMG */

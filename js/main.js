@@ -174,7 +174,8 @@ const closeBtnModal = document.querySelector('.modal-img__close');
 let currentItem;
 ItemsImgAll.forEach(img => {
   img.addEventListener('click', function () {
-    currentItem = img; console.log(currentItem);
+    currentItem = img;
+    // console.log(currentItem);
     return currentItem;
   })
 });
@@ -208,3 +209,15 @@ window.addEventListener('click', function (event) {
 //   modImgBlock.style.display = 'none';
 //   body.classList.remove('scroll-out');
 // });
+
+
+// object page slider expand photos
+
+const sliderImgs = document.querySelectorAll('.object__big-img');
+console.log(sliderImgs)
+
+sliderImgs.forEach(img => {
+  img.addEventListener('click', function () {
+
+  });
+});
