@@ -18,18 +18,6 @@ window.addEventListener('scroll', () => {
   lastScroll = scrollPosition();
 });
 
-// Show/hide menu
-const menuButton = document.querySelector("#menu-btn");
-const menuClose = document.querySelector(".mobile-menu__close");
-const menu = document.querySelector(".mobile-menu");
-
-menuButton.addEventListener("click", function () {
-  menu.classList.remove("hidden");
-});
-
-menuClose.addEventListener("click", function () {
-  menu.classList.add("hidden");
-});
 
 // show/hide select
 
@@ -47,9 +35,7 @@ let select = function () {
           el.closest(".select").classList.remove("is-active");
         }
       });
-
       currentTarget.classList.toggle("is-active");
-
     });
   }
 
@@ -69,6 +55,26 @@ let select = function () {
 
 select();
 
+// toggle sub-menu
+
+function toggleSubMenu() {
+  const subOpenbtn = document.querySelector('.mobile-menu__sub-open');
+  const subActive = document.querySelector('.mobile-menu__sub-menu');
+
+  subOpenbtn.addEventListener('click', function () {
+    subActive.classList.toggle('visible');
+  });
+}
+
+toggleSubMenu();
+
+
+// Show/hide menu
+const menuButton = document.querySelector("#menu-btn");
+const menuClose = document.querySelector(".mobile-menu__close");
+const menu = document.querySelector(".mobile-menu");
+
+
 window.addEventListener("click", function (event) {
   if (event.target.closest(".select")) {
     return;
@@ -78,7 +84,19 @@ window.addEventListener("click", function (event) {
   sel.forEach(function (item) {
     item.classList.remove('is-active');
   });
+
+  if (!event.target.closest('.mobile-menu') || event.target.closest('.mobile-menu__close')) {
+    menu.classList.add("hidden");
+  }
+
+  if (event.target.closest('#menu-btn')) {
+    menu.classList.toggle("hidden");
+  }
+
+
+
 });
+
 
 // Page Contols
 
@@ -147,18 +165,6 @@ pageControls.forEach(function (pageBtn) {
 })
 showPage(0);
 
-// toggle sub-menu
-
-function toggleSubMenu() {
-  const subOpenbtn = document.querySelector('.mobile-menu__sub-open');
-  const subActive = document.querySelector('.mobile-menu__sub-menu');
-
-  subOpenbtn.addEventListener('click', function () {
-    subActive.classList.toggle('visible');
-  });
-}
-
-toggleSubMenu();
 
 // expand images
 const imgItem = document.querySelectorAll('.instagram-gallery__item');
@@ -202,14 +208,6 @@ window.addEventListener('click', function (event) {
     ItemImgModal.src = "";
   }
 });
-
-// Или повесить слушателя на сам Крестик
-
-// closeBtnModal.addEventListener('click', function () {
-//   modImgBlock.style.display = 'none';
-//   body.classList.remove('scroll-out');
-// });
-
 
 // object page slider expand photos
 
