@@ -152,14 +152,18 @@
 }
 
 .languages {
-  label {
-    padding: 3px 1px;
+  &__item {
+    cursor: pointer;
+    user-select: none;
+    padding: 3px 2px;
     color: var(--secondary-grey-text);
+    &:last-child {
+      letter-spacing: 1px;
+    }
   }
-  label > input {
-    display: none;
-  }
+
   &__item--active {
+    background-color: #f5f5f5;
     outline: 1px solid var(--color-border-lighter);
   }
 }

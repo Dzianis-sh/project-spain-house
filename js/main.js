@@ -93,8 +93,6 @@ window.addEventListener("click", function (event) {
     menu.classList.toggle("hidden");
   }
 
-
-
 });
 
 
@@ -210,12 +208,34 @@ window.addEventListener('click', function (event) {
 });
 
 // object page slider expand photos
+// - - -
 
-const sliderImgs = document.querySelectorAll('.object__big-img');
-console.log(sliderImgs)
+// toggle languages 
 
-sliderImgs.forEach(img => {
-  img.addEventListener('click', function () {
+const languages = document.querySelector('.languages');
+const languagesHeader = document.querySelector('.header-top__languages');
+const languagesMobile = document.querySelector('.mobile-menu__languages');
+const languagesItems = document.querySelectorAll('.header-top__languages > .languages__item');
+const languagesMobItems = document.querySelectorAll('.mobile-menu__languages > .languages__item');
 
-  });
+languagesHeader.addEventListener('click', function (event) {
+  if (event.target.closest('.header-top__languages > .languages__item')) {
+    languagesItems.forEach(element => {
+      element.classList.remove('languages__item--active');
+    });
+    let currentItem = event.target;
+    currentItem.classList.add('languages__item--active');
+  }
 });
+
+languagesMobile.addEventListener('click', function (event) {
+  if (event.target.closest('.mobile-menu__languages > .languages__item')) {
+    languagesMobItems.forEach(element => {
+      element.classList.remove('languages__item--active');
+    });
+    let currentItem = event.target;
+    currentItem.classList.add('languages__item--active');
+  }
+});
+
+
