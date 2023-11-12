@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /* Variables */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 :root {
+  --ff-varela-font: "Varela", sans-serif;
   --ff-open-sans: "Open Sans", sans-serif;
   --ff-playfair: "Playfair Display SC", serif;
   --ff-search-roboto: "Roboto", sans-serif;
@@ -2187,6 +2189,62 @@ body.scrollock {
 }
 .main-object .form__v-code::placeholder {
   color: var(--secondary-grey-text);
+}
+
+.invalid {
+  outline: 1px solid red;
+}
+
+.approve-window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(17, 17, 17, 0.8117647059);
+}
+.approve-window__container {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #aaaaaa;
+}
+.approve-window__title {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: rgba(59, 165, 108, 0.719);
+  text-shadow: 0px 0px 5px #c2c2c2;
+}
+.approve-window__message {
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgb(199, 199, 199);
+  color: var(--secondary-grey-text);
+  margin-bottom: 100px;
+  font-family: var(--ff-varela-font);
+}
+.approve-window__close {
+  color: rgb(87, 87, 87);
+  align-self: center;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px 40px;
+  line-height: 20px;
+  background-color: rgb(199, 225, 207);
+  transition: 0.2s;
+}
+.approve-window__close:hover {
+  background-color: rgb(169, 190, 175);
 }
 
 .object {

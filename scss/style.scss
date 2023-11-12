@@ -1,5 +1,6 @@
 /* Variables */
 :root {
+  --ff-varela-font: "Varela", sans-serif;
   --ff-open-sans: "Open Sans", sans-serif;
   --ff-playfair: "Playfair Display SC", serif;
   --ff-search-roboto: "Roboto", sans-serif;
@@ -43,6 +44,7 @@
 //==========================
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 // =============================================
 
 label {

@@ -8,16 +8,17 @@ const scrollPosition = () => window.scrollY || document.querySelector.scrollTop;
 const containHide = () => fixedHeader.classList.contains('hide');
 
 window.addEventListener('scroll', () => {
-  if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+  if (
+    scrollPosition() > lastScroll &&
+    !containHide() &&
+    scrollPosition() > defaultOffset
+  ) {
     fixedHeader.classList.add('hide');
-
-  }
-  else if (scrollPosition() < lastScroll && containHide()) {
+  } else if (scrollPosition() < lastScroll && containHide()) {
     fixedHeader.classList.remove('hide');
   }
   lastScroll = scrollPosition();
 });
-
 
 // show/hide select
 
@@ -26,16 +27,16 @@ let select = function () {
   let selectItem = document.querySelectorAll('.select__item');
 
   for (let i = 0; i < selectHeader.length; i++) {
-    selectHeader[i].addEventListener("click", function (event) {
-      const currentTarget = event.target.closest(".select");
+    selectHeader[i].addEventListener('click', function (event) {
+      const currentTarget = event.target.closest('.select');
 
       [].forEach.call(selectHeader, function (el) {
-        const item = el.closest(".select");
+        const item = el.closest('.select');
         if (item !== currentTarget) {
-          el.closest(".select").classList.remove("is-active");
+          el.closest('.select').classList.remove('is-active');
         }
       });
-      currentTarget.classList.toggle("is-active");
+      currentTarget.classList.toggle('is-active');
     });
   }
 
@@ -50,7 +51,6 @@ let select = function () {
     currentText.innerText = text;
     select.classList.remove('is-active');
   }
-
 };
 
 select();
@@ -68,33 +68,32 @@ function toggleSubMenu() {
 
 toggleSubMenu();
 
-
 // Show/hide menu
-const menuButton = document.querySelector("#menu-btn");
-const menuClose = document.querySelector(".mobile-menu__close");
-const menu = document.querySelector(".mobile-menu");
+const menuButton = document.querySelector('#menu-btn');
+const menuClose = document.querySelector('.mobile-menu__close');
+const menu = document.querySelector('.mobile-menu');
 
-
-window.addEventListener("click", function (event) {
-  if (event.target.closest(".select")) {
+window.addEventListener('click', function (event) {
+  if (event.target.closest('.select')) {
     return;
   }
-  const sel = document.querySelectorAll(".select");
+  const sel = document.querySelectorAll('.select');
 
   sel.forEach(function (item) {
     item.classList.remove('is-active');
   });
 
-  if (!event.target.closest('.mobile-menu') || event.target.closest('.mobile-menu__close')) {
-    menu.classList.add("hidden");
+  if (
+    !event.target.closest('.mobile-menu') ||
+    event.target.closest('.mobile-menu__close')
+  ) {
+    menu.classList.add('hidden');
   }
 
   if (event.target.closest('#menu-btn')) {
-    menu.classList.toggle("hidden");
+    menu.classList.toggle('hidden');
   }
-
 });
-
 
 // Page Contols
 
@@ -109,44 +108,54 @@ function addClass(selector, classname) {
   });
 }
 
-const pageControls = document.querySelectorAll(".pagination__item");
+const pageControls = document.querySelectorAll('.pagination__item');
 let activePage = 0;
-const lastPage = document.querySelectorAll(".buildings-pages > div").length - 1;
+const lastPage = document.querySelectorAll('.buildings-pages > div').length - 1;
 
 function showPage(pageNum) {
-  removeClass(".pagination .pagination__item--active", "pagination__item--active");
+  removeClass(
+    '.pagination .pagination__item--active',
+    'pagination__item--active'
+  );
 
-  addClass(`.pagination__item[data-page-num='${pageNum}']`, "pagination__item--active");
+  addClass(
+    `.pagination__item[data-page-num='${pageNum}']`,
+    'pagination__item--active'
+  );
 
-  removeClass(".buildings-pages .buildings-pages--active", "buildings-pages--active");
+  removeClass(
+    '.buildings-pages .buildings-pages--active',
+    'buildings-pages--active'
+  );
   activePage = pageNum;
-  addClass(`.buildings-pages > div:nth-child(${activePage + 1})`, "buildings-pages--active");
+  addClass(
+    `.buildings-pages > div:nth-child(${activePage + 1})`,
+    'buildings-pages--active'
+  );
 
   if (pageNum === 0) {
-    addClass(`.pagination__item[data-page="prev"]`, "event-none");
+    addClass(`.pagination__item[data-page="prev"]`, 'event-none');
   } else {
-    removeClass(`.pagination__item[data-page="prev"]`, "event-none");
+    removeClass(`.pagination__item[data-page="prev"]`, 'event-none');
   }
 
   if (pageNum === lastPage) {
-    addClass(`.pagination__item[data-page="next"]`, "event-none");
+    addClass(`.pagination__item[data-page="next"]`, 'event-none');
   } else {
-    removeClass(`.pagination__item[data-page="next"]`, "event-none");
+    removeClass(`.pagination__item[data-page="next"]`, 'event-none');
   }
 }
 
 pageControls.forEach(function (pageBtn) {
-
-  pageBtn.addEventListener("click", function (event) {
-
+  pageBtn.addEventListener('click', function (event) {
     event.preventDefault();
 
     if (pageBtn.dataset.page) {
-      if (pageBtn.dataset.page === "prev") {
+      if (pageBtn.dataset.page === 'prev') {
         if (activePage !== 0) {
           showPage(activePage - 1);
         }
-      } else if (pageBtn.dataset.page === "next") {
+      } else if (pageBtn.dataset.page === 'next') {
         if (activePage < lastPage) {
           showPage(activePage + 1);
         }
@@ -154,15 +163,13 @@ pageControls.forEach(function (pageBtn) {
       return;
     }
 
-    const targetPage = Number(pageBtn.getAttribute("data-page-num"));
+    const targetPage = Number(pageBtn.getAttribute('data-page-num'));
     if (targetPage != activePage) {
       showPage(targetPage);
     }
   });
-
-})
+});
 showPage(0);
-
 
 // expand images
 const imgItem = document.querySelectorAll('.instagram-gallery__item');
@@ -174,16 +181,13 @@ const body = document.querySelector('body');
 const closeBtnModal = document.querySelector('.modal-img__close');
 // console.log(ItemImgIs);
 
-
 let currentItem;
 ItemsImgAll.forEach(img => {
   img.addEventListener('click', function () {
     currentItem = img;
-    // console.log(currentItem);
     return currentItem;
-  })
+  });
 });
-
 
 function expand(event) {
   if (event.target) {
@@ -203,21 +207,26 @@ window.addEventListener('click', function (event) {
     modImgBlock.style.visibility = 'hidden';
     modImgBlock.style.opacity = '0';
     body.classList.remove('scrollock');
-    ItemImgModal.src = "";
+    ItemImgModal.src = '';
   }
 });
 
 // object page slider expand photos
 // - - -
 
-// toggle languages 
+// toggle languages
 
 const languages = document.querySelector('.languages');
 const languagesHeader = document.querySelector('.header-top__languages');
 const languagesMobile = document.querySelector('.mobile-menu__languages');
-const languagesItems = document.querySelectorAll('.header-top__languages > .languages__item');
-const languagesMobItems = document.querySelectorAll('.mobile-menu__languages > .languages__item');
+const languagesItems = document.querySelectorAll(
+  '.header-top__languages > .languages__item'
+);
+const languagesMobItems = document.querySelectorAll(
+  '.mobile-menu__languages > .languages__item'
+);
 
+// changing language header
 languagesHeader.addEventListener('click', function (event) {
   if (event.target.closest('.header-top__languages > .languages__item')) {
     languagesItems.forEach(element => {
@@ -228,6 +237,7 @@ languagesHeader.addEventListener('click', function (event) {
   }
 });
 
+// changing language mobile menu
 languagesMobile.addEventListener('click', function (event) {
   if (event.target.closest('.mobile-menu__languages > .languages__item')) {
     languagesMobItems.forEach(element => {
@@ -237,5 +247,3 @@ languagesMobile.addEventListener('click', function (event) {
     currentItem.classList.add('languages__item--active');
   }
 });
-
-
