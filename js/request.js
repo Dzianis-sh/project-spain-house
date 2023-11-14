@@ -3,39 +3,39 @@ const approveWindow = document.querySelector('.approve-window');
 const closeBtn = document.querySelector('.approve-window__close');
 const objectForm = document.forms.objectform;
 const formCheckbox = document.querySelector('input[type=checkbox]');
-// const timeCounter = document.querySelector('');
-const inputs = document.querySelectorAll('.required');
-const checkbox = document.querySelector('.form-input-checkbox-border');
+const inputRequired = document.querySelectorAll('.required');
+
 
 
 // fake send request and get success respond
 submit.addEventListener('click', function (event) {
 
   const name = objectForm.username.value;
-  const email = objectForm.useremail.value;
   const message = objectForm.usermessage.value;
   const productcode = objectForm.productcode.value;
+  const email = objectForm.useremail;
   const isChecked = formCheckbox.checked;
-  if (!name || !email || !message || !isChecked || !productcode) {
+
+  if (!name.trim() || !message.trim() || !isChecked || !productcode.trim()) {
     event.preventDefault();
   } else {
     approveWindow.classList.remove('hidden');
     body.classList.add('scrollock');
   }
-  // for (let i = 0; i <= inputs.length; i++) {
-  // if (inputs[i].value || checkbox === false) {
-  //   checkbox.classList.remove('invalid');
-  //   inputs[i].classList.remove('invalid');
-  // } else {
-  //   checkbox.classList.add('invalid');
-  //   inputs[i].classList.add('invalid');
-  // }
-  // setTimeout(() => {
-  //   approveWindow.classList.add('hidden');
-  //   body.classList.remove('scrollock');
-  // }, 3000);
-  // }
 
+  if (isValidEmail(email)) {
+    email.classList.add('invalid');
+  } else {
+    email.classList.remove('invalid');
+  }
+
+  for (let i = 0; i <= inputRequired.length; i++) {
+    if (inputRequired[i].value.trim()) {
+      inputRequired[i].classList.remove('invalid');
+    } else {
+      inputRequired[i].classList.add('invalid');
+    }
+  }
 });
 
 closeBtn.addEventListener('click', () => {
@@ -43,5 +43,8 @@ closeBtn.addEventListener('click', () => {
   body.classList.remove('scrollock');
 });
 
+function isValidEmail(input) {
+  return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}
 
 
