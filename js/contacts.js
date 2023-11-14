@@ -12,11 +12,10 @@ submit.addEventListener('click', function (event) {
 
   const name = objectForm.username.value;
   const message = objectForm.usermessage.value;
-  const productcode = objectForm.productcode.value;
   const email = objectForm.useremail;
   const isChecked = formCheckbox.checked;
 
-  if (!name.trim() || !message.trim() || !isChecked || !productcode.trim() || (isValidEmail(email))) {
+  if (!name.trim() || !message.trim() || !isChecked || (isValidEmail(email))) {
     event.preventDefault();
   } else {
     approveWindow.classList.remove('hidden');
@@ -25,9 +24,8 @@ submit.addEventListener('click', function (event) {
 
   if (isValidEmail(email)) {
     email.classList.add('invalid');
-
   } else {
-    email.classList.remove('invalid'); event.preventDefault();
+    email.classList.remove('invalid');
   }
 
   for (let i = 0; i <= inputRequired.length; i++) {

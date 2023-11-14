@@ -260,19 +260,19 @@
                         365</span>&nbsp;<img width="18" height="18" src="./img/icons/rus.svg" alt="ico"></a>
                   </div>
                 </div>
-                <form class="form__body" action="#" enctype="multipart/form-data" method="post">
+                <form class="form__body" name="objectform" action="#" enctype="multipart/form-data" method="post">
                   <div class="form__inputs">
                     <label>
-                      <input required placeholder="Имя*" type="text" name="username">
+                      <input class="required" placeholder="Имя*" type="text" name="username">
                     </label>
                     <label>
-                      <input required placeholder="Email адрес*" type="email" name="useremail">
+                      <input placeholder="Email адрес*" type="email" name="useremail">
                     </label>
                     <label>
-                      <input placeholder="Номер телефона" type="tel" name="usermobile">
+                      <input class="required" placeholder="Номер телефона" type="tel" name="usermobile">
                     </label>
                     <label>
-                      <textarea class="form__textarea" name="usermessage" required placeholder="Сообщение*"
+                      <textarea class="form__textarea required" name="usermessage" required placeholder="Сообщение*"
                         id="form-txt-area" rows="5"></textarea>
                     </label>
                   </div>
@@ -282,8 +282,21 @@
                     <span>Я Принимаю&nbsp;<a href="./contacts.html">Политику
                         Конфиденциальности</a></span>
                   </label>
-                  <input class="form__btn btn" type="submit" value="Отправить">
+                  <button class="form__btn btn" type="button">Отправить</button>
                 </form>
+                <div class="approve-window hidden">
+                  <div class="approve-window__container">
+                    <div class="approve-window__title title form__title">
+                      Success
+                    </div>
+                    <div class="approve-window__message">
+                      Our manager will contact you soon
+                    </div>
+                    <button type="button" class="approve-window__close">
+                      Close
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -333,5 +346,6 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/contacts.js"></script>
   </div>
 </body>
