@@ -38,6 +38,14 @@ submit.addEventListener('click', function (event) {
   }
 });
 
+
+// .value.length === 0
+// setTimeout(() => {
+//   approveWindow.classList.add('hidden');
+//   body.classList.remove('scrollock');
+// }, 3000);
+// }
+
 closeBtn.addEventListener('click', () => {
   approveWindow.classList.add('hidden');
   body.classList.remove('scrollock');
