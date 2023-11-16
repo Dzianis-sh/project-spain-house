@@ -247,3 +247,5 @@ languagesMobile.addEventListener('click', function (event) {
     currentItem.classList.add('languages__item--active');
   }
 });
+
+AOS.init();
