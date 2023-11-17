@@ -3,8 +3,7 @@ const approveWindow = document.querySelector('.approve-window');
 const closeBtn = document.querySelector('.approve-window__close');
 const objectForm = document.forms.objectform;
 const formCheckbox = document.querySelector('input[type=checkbox]');
-const inputRequired = document.querySelectorAll('.required');
-
+const inputsRequired = document.querySelectorAll('.required');
 
 
 // fake send request and get success respond
@@ -28,21 +27,38 @@ submit.addEventListener('click', function (event) {
     email.classList.remove('invalid');
   }
 
-  for (let i = 0; i <= inputRequired.length; i++) {
-    if (inputRequired[i].value.trim()) {
-      inputRequired[i].classList.remove('invalid');
+  // for (let i of inputsRequired) {
+  //   if (i.value.trim()) {
+  //     i.classList.remove('invalid');
+  //   } else {
+  //     i.classList.add('invalid');
+  //   }
+  // }
+
+  for (let i = 0; i < inputsRequired.length; i++) {
+
+    if (inputsRequired[i].value.trim().length === 0) {
+      inputsRequired[i].classList.add('invalid');
     } else {
-      inputRequired[i].classList.add('invalid');
+      inputsRequired[i].classList.remove('invalid');
     }
   }
 });
 
+// function autoCloseWindow(delay) {
+//   for (let i = 0; i <= delay; i++) {
+//     delay--;
+//     console.log(1)
+//   }
 
-// .value.length === 0
-// setTimeout(() => {
-//   approveWindow.classList.add('hidden');
-//   body.classList.remove('scrollock');
-// }, 3000);
+//   approveWindow.insertAdjacentHTML(
+//     'afterbegin',
+//     '<div>Window automatically close after 3 sec</div>'
+//   );
+//   setTimeout(() => {
+//     approveWindow.classList.add('hidden');
+//     body.classList.remove('scrollock');
+//   }, 3000);
 // }
 
 closeBtn.addEventListener('click', () => {
