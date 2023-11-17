@@ -718,6 +718,7 @@ p {
 .wrapper {
   min-height: 100%;
   width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -1131,10 +1132,7 @@ body.scrollock {
     grid-template-rows: repeat(2, 500px);
     gap: 20px;
   }
-  .recommend-objects__item-1,
-  .recommend-objects__item-2,
-  .recommend-objects__item-3,
-  .recommend-objects__item-4 {
+  .recommend-objects__item-1, .recommend-objects__item-2, .recommend-objects__item-3, .recommend-objects__item-4 {
     grid-area: unset;
   }
   .instagram .container {
@@ -1404,8 +1402,7 @@ body.scrollock {
   .card__content {
     padding: 10px;
   }
-  .card__size-room,
-  .card__terrace {
+  .card__size-room, .card__terrace {
     font-size: 12px;
   }
 }
@@ -1954,8 +1951,7 @@ body.scrollock {
   background-color: var(--pagination-btn-active);
   color: var(--primary-white-text);
 }
-.pagination__btn-prev path,
-.pagination__btn-next path {
+.pagination__btn-prev path, .pagination__btn-next path {
   transition: all 0.3s;
 }
 .pagination__btn-prev:hover svg path,
@@ -2292,8 +2288,7 @@ body.scrollock {
 .object__about-table {
   flex: 1 1 calc(100% - 911px - 17px);
 }
-.object__img-screen,
-.object__pic {
+.object__img-screen, .object__pic {
   position: relative;
   cursor: pointer;
 }
